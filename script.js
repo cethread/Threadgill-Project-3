@@ -20,9 +20,9 @@ function signIn () {
     
 }
 
-function lowOpacity () {
-    icon.style.opacity = "0.5";
-}
+// function lowOpacity () {
+//     icon.style.opacity = "0.5";
+// }
 getStartedBtn.addEventListener("click", signIn, false);
-logoImage.addEventListener("mouseover" , lowOpacity, false)
+// logoImage.addEventListener("mouseover" , lowOpacity, false)
 console.log("working")
