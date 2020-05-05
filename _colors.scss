@@ -3,13 +3,24 @@
 // tutor cards --xs, sm,xl fonts
 
 // Colors
-$orange: #F8951D; 
-$lightOrange: #FAA935;
-$offWhite: #FFF7EE;
-$blue: #3A5A99; 
-$gray:  rgb(151, 165, 182);
+$color-card-heading: #fff7ee; 
+$color-primary: #fff7ee; 
+$color-body: #e6e6e6;
 $cta: #00b7b2;
-$color-bg:red;
+
+// GRADIENTS
+    // HOME-BG-COLOR
+// background: rgb(36,39,88);
+// background: linear-gradient(90deg, rgba(36,39,88,1) 0%, rgba(20,20,67,1) 100%);
+
+    // PRIMARY BTN COLOR
+// background: rgb(82,102,204);
+// background: linear-gradient(90deg, rgba(82,102,204,1) 0%, rgba(62,77,153,1) 100%);
+
+    // Tutor Card BG COLOR
+// background: rgb(58,90,153);
+// background: linear-gradient(90deg, rgba(58,90,153,1) 0%, rgba(49,56,113,1) 100%);
+
 
 // Fonts
 // $body-heading: "open sans"

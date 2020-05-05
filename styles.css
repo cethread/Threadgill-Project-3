@@ -1,3 +1,38 @@
+@font-face {
+  src: url(fonts/BPreplayBold.otf);
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'Main-Bold';
+}
+
+@font-face {
+  src: url(fonts/BPreplay.otf);
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'Main-Normal';
+}
+
+@font-face {
+  src: url(fonts/OpenSans-SemiBold.ttf);
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'Body-Bold';
+}
+
+@font-face {
+  src: url(fonts/OpenSans-Regular.ttf);
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'Body-Normal';
+}
+
+@font-face {
+  src: url(fonts/OpenSans-Light.ttf);
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'Body-Light';
+}
+
 *, ::before, ::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -10,23 +45,25 @@
 
 body {
   overflow: hidden;
-  background-color: #242758 linear-gradient(90deg, #242758 0%, #141443 100%);
   position: relative;
   height: 100vh;
+  background: #242758;
+  background: -webkit-gradient(linear, left top, right top, from(#242758), to(#141443));
+  background: linear-gradient(90deg, #242758 0%, #141443 100%);
 }
 
 a {
-  font-size: 20px;
+  font-family: "Main-Bold";
+  font-size: 31px;
   text-decoration: none;
   display: block;
   width: 260px;
   text-align: center;
-  color: #97a5b6;
+  color: #fff7ee;
 }
 
 .btn {
   color: white;
-  background-color: #008299;
   font-size: 20px;
   padding: 0.3em 0;
   border-radius: 35px;
@@ -47,10 +84,10 @@ form input {
   height: 2.8em;
   border-radius: 35px;
   background: none;
-  font-size: 15px;
+  font-size: 24px;
   color: white;
   text-indent: 50px;
-  border: #008299 solid 1px;
+  border: #00b7b2 solid 1px;
 }
 
 form .password {
@@ -68,9 +105,9 @@ form .password {
 }
 
 form .forgot-password {
-  color: #97a5b6;
+  color: #fff7ee;
   margin-top: 10px;
-  font-size: 15px;
+  font-size: 24px;
   margin-left: 9em;
   -webkit-transform: translateX(-23em);
           transform: translateX(-23em);
@@ -126,16 +163,16 @@ form .btn-slide-left {
 }
 
 .sign-in .btn.outline {
-  outline: #008299 2px solid;
+  outline: #00b7b2 2px solid;
   border-radius: 35px;
 }
 
 .sign-in h1 {
-  color: gray;
+  color: p #fff7ee;
 }
 
 .sign-in h1 span {
-  color: #008299;
+  color: #00b7b2;
 }
 
 .sign-in .icon {

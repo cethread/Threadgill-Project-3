@@ -7,21 +7,23 @@
 }
 body {
     overflow: hidden;
-    background-color: red;
     position: relative;
     height: 100vh;
+    background: rgb(36,39,88);
+    background: linear-gradient(90deg, rgba(36,39,88,1) 0%, rgba(20,20,67,1) 100%);
 }
 a {
-    font-size: $medium;
+    font-family: $font-main-bold;
+    font-size: $font-medium;
     text-decoration: none;
     display: block;
     width: 260px;
     text-align: center;
-    color: $gray;
+    color: $color-primary;
 }
 .btn {
     color: white;
-    background-color: $color-bg;
+    // background-color: $color-bg;
     font-size: 20px;
     padding: 0.3em 0;
     border-radius: 35px;
@@ -40,10 +42,10 @@ form {
         height: 2.8em;
         border-radius: 35px;
         background: none;
-        font-size: $small;
+        font-size: $font-small;
         color: white;
         text-indent: 50px;
-        border: $light-blue solid 1px;
+        border: $cta solid 1px;
         
     }
     .password {
@@ -63,9 +65,9 @@ form {
         transition: ease all 1.4s;
     }
     .forgot-password  {
-        color: $gray;
+        color: $color-primary;
         margin-top: 10px;
-        font-size: $small;
+        font-size: $font-small;
         margin-left: 9em;
         transform: translateX(-23em);
         transition: ease all 1.4s;
@@ -107,15 +109,15 @@ form {
     .btn {
     
         &.outline {
-            outline: $light-blue 2px solid;
+            outline: $cta 2px solid;
             border-radius: 35px;
         }
     }
 
     h1 {
-        color: gray;
+        color: p$color-primary;
         span {
-            color: $light-blue
+            color: $cta
         }
     }
     
