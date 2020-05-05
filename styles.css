@@ -10,12 +10,8 @@
 
 body {
   overflow: hidden;
-  background-color: #08203f;
+  background-color: #242758 linear-gradient(90deg, #242758 0%, #141443 100%);
   position: relative;
-}
-
-.container {
-  max-width: 300px;
   height: 100vh;
 }
 
@@ -26,6 +22,19 @@ a {
   width: 260px;
   text-align: center;
   color: #97a5b6;
+}
+
+.btn {
+  color: white;
+  background-color: #008299;
+  font-size: 20px;
+  padding: 0.3em 0;
+  border-radius: 35px;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+  -webkit-transform: translateY(0em);
+          transform: translateY(0em);
+  position: relative;
 }
 
 form {
@@ -67,6 +76,7 @@ form .forgot-password {
           transform: translateX(-23em);
   -webkit-transition: ease all 1.4s;
   transition: ease all 1.4s;
+  opacity: 0;
 }
 
 form .username {
@@ -113,19 +123,6 @@ form .btn-slide-left {
   height: 100vh;
   padding-bottom: 5em;
   z-index: 100;
-}
-
-.sign-in .btn {
-  color: white;
-  background-color: #008299;
-  font-size: 20px;
-  padding: 0.3em 0;
-  border-radius: 35px;
-  -webkit-transition: all ease 1s;
-  transition: all ease 1s;
-  -webkit-transform: translateY(0em);
-          transform: translateY(0em);
-  position: relative;
 }
 
 .sign-in .btn.outline {
