@@ -1,0 +1,45 @@
+*,::before,::after {
+    box-sizing: border-box;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+// .container {
+//     margin: 0 auto;
+//     padding: 0 3em;
+// }
+body {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    background: rgb(36,39,88);
+    background: linear-gradient(90deg, rgba(36,39,88,1) 0%, rgba(20,20,67,1) 100%);
+}
+a {
+    font-family: $font-main-bold;
+    font-size: $font-medium;
+    text-decoration: none;
+    display: block;
+    width: 260px;
+    text-align: center;
+    color: $color-primary;
+}
+.btn {
+    color: white;
+    // background-color: $color-bg;
+    font-size: 20px;
+    padding: 0.3em 0;
+    border-radius: 35px;
+    transition: all ease 1s;
+    transform: translateY(0em);
+    position: relative;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+// Hamburger
+    

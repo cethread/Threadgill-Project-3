@@ -1,0 +1,37 @@
+
+@font-face {
+    src: url(fonts/BPreplayBold.otf);
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Main-Bold';
+}
+@font-face {
+    src: url(fonts/BPreplay.otf);
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Main-Normal';
+}
+@font-face {
+    src: url(fonts/OpenSans-SemiBold.ttf);
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Body-Bold';
+}
+@font-face {
+    src: url(fonts/OpenSans-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Body-Normal';
+}
+@font-face {
+    src: url(fonts/OpenSans-Light.ttf);
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Body-Light';
+}
+
+$font-main-bold: 'Main-Bold';
+$font-main-normal: 'Main-Normal';
+$font-body-bold: 'Body-Bold';
+$font-body-normal: 'Body-Normal';
+$font-body-light: 'Body-Lightv';
