@@ -53,6 +53,9 @@ h2 {
   &-toggler {
     color: white;
   }
+  .navbar-nav {
+    width: 71%;
+  }
 
   // &-toggler-icon {
   //     display: inline-block;
@@ -111,5 +114,3 @@ header {
     rgba(20, 20, 67, 1) 100%
   );
 }
-
-
