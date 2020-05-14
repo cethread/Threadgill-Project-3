@@ -1,27 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile App | Project 3 </title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ihq2yhi.css">
+  <title>Bootstrap</title>
 </head>
-<body>
-    <div class="hamburger"></div>
+
+<!-- Main Nav -->
+<nav class="navbar navbar-expand-md mx-auto fixed-top">
+    <!-- button -->
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myTogglerNav" aria-controls="myTogglerNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars toggle"></i>
+    <!-- <i class="fas fa-times toggle"></i> -->
+    </button>
+    
+    <!-- navbar-collapse -->
     <div class="container">
-        <section class="sign-in flex">
-            <a href="#"><img class="logo" src="images/wetutorlogo_Logo Artboard.png" alt="Photoshop Logo"></a>
-            <a href="#" class="btn btn-slide-down" style="margin-top: 1em;">Get Started</a>
-            
-            <form action="" >
-                <input type="text" placeholder="Username" class="username">
-                <input type="text" placeholder="Password" class="password">
-                <label for="Forgot Password"><a href="#" class="forgot-password">Forgot Password?</a></label>
-                <a href="#" class="btn btn-slide-left" style="margin-top: 1em;">Sign-in</a>
-            </form>
-    </section>
+        <div class="collapse navbar-collapse " id="myTogglerNav">
+            <ul class="navbar-nav mx-auto align-items-md-end justify-content-around">
+                <a href="#" class="navbar-item navbar-link">Home</a>
+                <a href="#" class="navbar-item navbar-link">About</a>
+                <!-- Brand logo Large screen -->
+                <a href="index.html" class="d-none d-md-block"><img class="navbar-brand" src="images/wetutorlogo_Logo Artboard.png" alt="weTutor Logo"></a>
+                <a href="#" class="navbar-item navbar-link">How It Works</a>
+                <a href="#" class="navbar-item navbar-link">Login</a>
+            </ul>
+        </div>
+    </div><!--Navbar-nav container End-->
+</nav><!--Main Nav End-->
+
+<div class="jumbotron-fluid d-md-block">
+    <img class="img-fluid" src="images/home-img.jpg" alt="weTutor Home Tutor Banner Image">
+</div>
+<!-- header -->
+<header class="d-md-flex">
+    <div class="container">
+        <!-- find a tutor btn -->
+    <div class="header-btn-wrap">
+        <div>
+            <a href="#" title="Find A Tutor Now">  
+                Find A Tutor
+            </a>
+        </div>
+        <img class="find-a-tutor-outline" src="images/Half_circle-04.png">
+    </div><!--btn wrap end-->
+    <!-- Mobile Brand Logo -->
+    <a href="index.html" class="d-sm-block"><img class="navbar-brand-mobile mt-n3" src="images/wetutorlogo_Logo Artboard.png" alt="weTutor Brand Logo"></a>
     </div>
     
+</header>
+
+<body>
+    <!-- About Section -->
+    <article id="about" class="container">
+        <div class="row">
+            <div class="col-md-6 order-md-2 align-self-center">
+                <h1>Who We Are</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id architecto nam voluptatibus hic atque necessitatibus alias beatae incidunt delectus ipsum, provident 
+                    vtenetur obcaecati fugiat molestias. Minus beatae ab tempora amet.</p>
+            </div>
+            <div class="col-md-6 order-md-1 p-0">
+                <img src="images/about-img.jpg" alt="Who we are" class="img-fluid about-img rounded-circle">
+            </div>
+        </div>
+            
+    </article>
+
+    <h1 class="mt-5">Finding A Tutor Is Easy</h1>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="mt-5 py-5">
+        <div class="container">
+
+            <!-- Step 1 -->
+            <div class="row">
+                <div class="step-1-decoration"></div>
+                <div class="col align-self-center">
+                    <h2 class="step-1-h2 align-self-end">Step 1</h2>
+                </div><!--Col End-->
+                <div class="col">
+                    <div class="step-1">
+                        <p> <span> Choose Your Subject</span> <br> Html <br> CSS <br> Javascript</p>
+                    </div><!--Step 1 End-->
+                </div><!--Col End-->
+            </div><!--Row End-->
+
+            <!-- Step 2 -->
+            <div class="row">
+                <div class="step-2-decoration"></div>
+                <div class="col order-md-4 align-self-center">
+                    <h2 class="step-2-h2">Step 2</h2>
+                </div>
+                <div class="col order-md-3">
+                    <div class="step-2">
+                        <p><span>Give Your Availibility </span> <br>Flexible</p>
+                    </div><!--Step 2 End-->
+                </div>
+            </div><!--Row End-->
+
+            <!-- Step 3 -->
+            <div class="row">
+                <div class="step-3-decoration"></div>
+                <div class="col align-self-center">
+                    <h2 class="step-3-h2">Step 3</h2>
+                </div>
+                <div class="col">
+                    <div class="step-3">
+                        <p> <span>Get The Perfect Tutor!</span></p>
+                    </div><!--Step 3 End-->
+                </div>
+            </div><!--Row End-->
+
+        </div><!--Container End-->
+    </section><!--How It Works End-->
+
+    <div class="tutor-devider mt-5"></div>
+
+    <!-- Top Tutors  Section-->
+    <h1>Our Top Tutors</h1>
+    <hr>
+    <section class="top-tutors container d-md-flex">
+
+        <div class="card">
+            <img class="card-img rounded-circle" src="images/studying-tips-1.jpg" alt="Top Tutor: Erica Rogers">
+            <div class="card-text">
+                <h5 class="card-title pt-3"><span>Erica Rogers</span>, Teacher</h5>
+                <p>Lorem, ipsum dolor sit, alias tempora deleniti unde hic iusto sed quae.</p>
+            </div>
+            <section id="rating" class="d-flex mx-auto justify-content-center">
+                <img src="images/star-rating-icon-05.png" alt="">
+                <img src="images/star-rating-icon-05.png" alt="">
+                <img src="images/star-rating-icon-05.png" alt="">
+                <img src="images/star-rating-icon-05.png" alt="">
+                <img src="images/star-rating-icon-05.png" alt="">
+            </section><!--Rating End-->
+        </div><!--Card End-->
+        
+        <div class="card">
+            <div class="card-body">
+                <img class="card-img rounded-circle" src="images/tutor-pic-1.jpg" alt="Top Tutor: James Lockwell">
+                <h5 class="card-title pt-3"><span>James Lockwell</span>, Teacher</h5>
+                <p class="card-text">Lorem, ipsum dolor sit, alias tempora deleniti unde hic iusto sed quae.</p>
+            
+                <section id="rating" class="d-flex mx-auto justify-content-center">
+                    <img src="images/star-rating-icon-05.png" alt="">
+                    <img src="images/star-rating-icon-05.png" alt="">
+                    <img src="images/star-rating-icon-05.png" alt="">
+                    <img src="images/star-rating-icon-05.png" alt="">
+                    <img src="images/star-rating-icon-05.png" alt="">
+                </section><!--Rating End-->
+            </div>
+        </div><!--Card End-->
+
+        <div class="card">
+            <img class="card-img rounded-circle" src="images/Stepahnie.jpg" alt="Top Tutor: Stephanie Ojeda">
+            <h5 class="card-title pt-3"><span>Stephanie Ojeda</span>, Teacher</h5>
+            <div class="card-text">
+                <p>Lorem, ipsum dolor sit, alias tempora deleniti unde hic iusto sed quae.</p>
+            </div>
+            <section id="rating" class="d-flex mx-auto justify-content-center">
+                    <img src="images/star-rating-icon-05.png" alt="">
+                    <img src="images/star-rating-icon-05.png" alt="">
+                    <img src="images/star-rating-icon-05.png" alt="">
+                    <img src="images/star-rating-icon-05.png" alt="">
+                    <img src="images/star-rating-icon-05.png" alt="">
+            </section>
+        </div><!--Card End-->
+    </section><!--Tutor Section End-->
+
+    <div class="tutor-devider mb-5"></div>
+
+    <!-- Footer -->
+    <footer id="contact" class="get-in-touch">
+        <img class="footer-logo img-fluid" src="images/footer-logo-05.png" alt="weTutor Logo">
+        <div class="container row mx-auto">
+            <div class="col-sm-6 pb-5">
+                <h6>Get To Know Us</h6>
+                <nav>
+                    <li class="list-unstyled"><a href="#">About Us</a></li>
+                    <li class="list-unstyled"><a href="#">Contact us</a></li>
+                    <li class="list-unstyled"><a href="#">FAQ</a></li>
+                    <li class="list-unstyled"><a href="#">Reviews</a></li>
+                    <li class="list-unstyled"><a href="#">Saftey</a></li>
+                    <li class="list-unstyled"><a href="#">Security</a></li>
+                </nav>
+            </div><!--Col End-->
+            <div class="col-sm-6 pb-5">
+                <h6>Learn With Us</h6>
+                <nav>
+                    <li class="list-unstyled"><a href="#">About Us</a></li>
+                    <li class="list-unstyled"><a href="#">Find A Tutor</a></li>
+                    <li class="list-unstyled"><a href="#">Request A Tutor</a></li>
+                    <li class="list-unstyled"><a href="#">Online Tutoring</a></li>
+                    <li class="list-unstyled"><a href="#">Get Math Help</a></li>
+                    <li class="list-unstyled"><a href="#">Learning Resources</a></li>
+                </nav>
+            </div><!--Col End-->
+            <div class="col-sm-6 pb-5">
+                <h6>Download Our Free App</h6>
+                <div class="d-flex justify-content-center ">
+                    <p>Google Play</p><a href="#"><img class="social-links" style=" margin-left: 0.5rem; width: 1rem; margin-right: 0.5rem;" src="images/googleplay.png" alt="Google Play Store"></a>
+                    <p>App Store</p><a href="#"><img class="social-links" style=" margin-left: 0.5rem; width: 1rem;" src="images/iphone.png" alt="App Store"></a>
+                </div>
+            </div><!--Col End-->
+            <div class="col-sm-6 pb-5">
+                <h6>Feeling A Little Lost?</h6>
+                <p>Start here or give us a call: (312) 555-8822</p>
+            </div><!--Col End-->
+            <div class="col-sm-6 offset-md-3">
+                <h6>Let's Keep In Touch</h6>
+                <div class="d-flex justify-content-center">
+                    <a href="#"><img style="margin-right: 1.5rem; width: 1.5rem;" class="social-links" src="images/fb icon-2.png" alt="weTutor's FaceBook"></a>
+                    <a href="#"><img style="margin-right: 1.5rem; width: 1.5rem;" class="social-links" src="images/linked-in-icon.png" alt="weTutor's LinkedIn"></a>
+                    <a href="#"><img style="width: 1.5rem;" class="social-links" src="images/ig logo.png" alt="weTutor's Instagram"></a>
+                </div>
+            </div><!--Col End-->
+        </div><!--Row End-->
+    </footer>
+</div><!-- container -->
+
 <script src="script.js"></script>
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

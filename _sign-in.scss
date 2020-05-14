@@ -1,4 +1,4 @@
-form {
+/*form {
     position: relative;
     z-index: 100;v
     input {
@@ -9,7 +9,7 @@ form {
         font-size: $font-small;
         color: white;
         text-indent: 50px;
-        border: $cta solid 1px;
+        // border: $cta solid 1px;
     }
     .password {
         margin-top: 10px;
@@ -28,7 +28,7 @@ form {
         transition: ease all 1.4s;
     }
     .forgot-password  {
-        color: $color-primary;
+        // color: $color-primary;
         margin-top: 10px;
         font-size: $font-small;
         margin-left: 9em;
@@ -67,17 +67,15 @@ form {
     .btn {
     
         &.outline {
-            outline: $cta 2px solid;
+            // outline: $cta 2px solid;
             border-radius: 35px;
         }
     }
 
-    h1 {
-        color: p$color-primary;
-        span {
-            color: $cta
-        }
-    }
+    // h1 {
+    //     color: p$color-primary;
+        
+    // }
     
 
     .logo {
@@ -115,4 +113,4 @@ form {
         border-radius: 35px;
         transform: translateY(-6em) rotate(115deg);
     }
-}
+} */

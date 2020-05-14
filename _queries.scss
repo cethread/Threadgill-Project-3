@@ -1,0 +1,196 @@
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+// @media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }
+
+// GLOBAL
+
+// Phones
+@media (min-width: 0px) {
+  // Navbar
+  .header-btn-wrap {
+    position: relative;
+    a,
+    img {
+      margin: auto;
+      left: 0;
+      right: 0;
+      position: absolute;
+    }
+    a {
+      background: rgb(36, 39, 88);
+      background: linear-gradient(
+        90deg,
+        rgba(36, 39, 88, 1) 0%,
+        rgba(20, 20, 67, 1) 100%
+      );
+      border-radius: 130px;
+      width: 9.4rem;
+      height: 147px;
+      font-family: "Main-Normal";
+      font-size: 1.338rem;
+      top: 10.1rem;
+      padding: 3.5rem 0 0 1.2rem;
+      z-index: 100;
+
+      &:hover {
+        color: $color-periwinkle;
+        text-decoration: none;
+      }
+    }
+    img {
+      height: 174px;
+      width: 11.1rem;
+      top: 9.3rem;
+      z-index: -100;
+    }
+  }
+  header {
+    .navbar-brand-mobile {
+      width: 11.05rem;
+      position: absolute;
+      margin: auto;
+      right: 0;
+      left: 0;
+      top: 3rem;
+    }
+  }
+  .jumbotron-fluid {
+    display: none;
+  }
+
+  // How It Works
+
+  // Footer
+
+  .footer-logo {
+    width: 11rem;
+  }
+}
+// Phone down
+@media (max-width: 576px) {
+  // Gloabl
+  h1 {
+    font-size: 2rem !important;
+  }
+  h5 {
+    font-size: 1.2rem;
+    margin-bottom: 0.35rem !important;
+  }
+  p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.03rem;
+  }
+
+  // Top Tutors
+  .top-tutors {
+    .card-title span {
+      letter-spacing: 0.04rem;
+    }
+  }
+
+  nav li,
+  p {
+    font-size: 0.838rem;
+  }
+  .social-links {
+    width: 1.4rem;
+  }
+}
+// Ipad
+@media (min-width: 768px) {
+  // Navbar
+  .navbar {
+    .navbar-brand {
+      width: 7rem;
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      font-size: 1.25rem;
+      line-height: inherit;
+      white-space: nowrap;
+    }
+    ul {
+      width: 100%;
+    }
+  }
+
+  header {
+    height: 12rem;
+    z-index: 1;
+    margin-top: -7rem;
+
+    .header-btn-wrap {
+      position: relative;
+
+      a,
+      img {
+        display: none;
+      }
+    }
+    .navbar-brand-mobile {
+      width: 18.05rem;
+      position: relative;
+    }
+  }
+  // How It Works
+
+
+    // .step-1-decoration {
+    //   background-image: url(images/Teal-Arrow-05.png);
+    //   background-size: cover;
+    //   background-repeat: no-repeat;
+    //   height: 34%;
+    //   width: 47rem;
+    //   position: absolute;
+    //   max-width: 100%;
+    //   top: 0rem;
+    //   left: 27rem;
+    // }
+    // .step-2-decoration {
+    //   background-image: url(images/gray-arrow-05.png);
+    //   background-size: cover;
+    //   background-repeat: no-repeat;
+    //   height: 34%;
+    //   width: 47rem;
+    //   position: absolute;
+    //   max-width: 100%;
+    //   top: 18rem;
+    //   -webkit-transform: scaleX(-1);
+    //   -moz-transform: scaleX(-1);
+    //   -o-transform: scaleX(-1);
+    //   transform: scaleX(-1);
+    //   left: 33rem;
+    // }
+    // .step-3-decoration {
+    //   background-image: url(images/Periwinkle-arrow-05.png);
+    //   background-size: cover;
+    //   background-repeat: no-repeat;
+    //   height: 34%;
+    //   width: 47rem;
+    //   position: absolute;
+    //   max-width: 100%;
+    //   top: 35rem;
+    //   left: 24rem;
+    // }
+}
+
+// Laptop
+@media (max-width: 2000px) {
+  #rating {
+    img {
+      width: 2rem;
+    }
+  }
+}

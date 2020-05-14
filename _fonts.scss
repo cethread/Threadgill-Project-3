@@ -29,9 +29,13 @@
     font-weight: normal;
     font-family: 'Body-Light';
 }
+// @font-face {
+//     src: url(fonts/AcuminVariableConcept.otf);
+//     font-family: 'Body-Heading';
+//     font-weight: bold;
+// }
 
-$font-main-bold: 'Main-Bold';
-$font-main-normal: 'Main-Normal';
-$font-body-bold: 'Body-Bold';
-$font-body-normal: 'Body-Normal';
-$font-body-light: 'Body-Lightv';
+@import url("https://use.typekit.net/ihq2yhi.css");
+
+$font-heading:  'acumin-pro';
+

@@ -1,0 +1,32 @@
+footer {
+  color: $color-body-light;
+  position: relative;
+  background: rgb(36, 39, 88);
+  background: linear-gradient(
+    90deg,
+    rgba(36, 39, 88, 1) 0%,
+    rgba(20, 20, 67, 1) 100%
+  );
+
+  .footer-logo {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: -1rem;
+  }
+  .row {
+    padding: 7rem 0;
+  }
+  .col {
+    padding-bottom: 6rem;
+  }
+  .social-links {
+    transition: all ease 0.4s;
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

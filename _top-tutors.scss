@@ -1,0 +1,25 @@
+.tutor-devider {
+    background-image: url(images/tutor-decoration-05.png);
+    width: 5em;
+    height: 3em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+
+}
+
+.top-tutors {
+    padding-top: 1.5rem;
+    
+    .card {
+        margin-bottom: 3rem;
+        border: none;
+    }
+    .card-title span {
+        font-family: 'Main-Bold';
+    }
+}
+
+
+
+    
