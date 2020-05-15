@@ -10858,6 +10858,10 @@ h2 {
   color: white;
 }
 
+.navbar .navbar-nav {
+  width: 71%;
+}
+
 header {
   position: relative;
   z-index: -1;
@@ -10983,72 +10987,6 @@ header {
         transform: translateY(-6em) rotate(115deg);
     }
 } */
-.sign-in-trigger .btn-slide-down {
-  -webkit-transition: all ease 1s;
-  transition: all ease 1s;
-  -webkit-transform: translateY(20em);
-          transform: translateY(20em);
-  opacity: 0;
-}
-
-.sign-in-trigger .btn-slide-left {
-  -webkit-transition: all ease 1s;
-  transition: all ease 1s;
-  -webkit-transform: translateX(0em);
-          transform: translateX(0em);
-  -webkit-transition-delay: .2s;
-          transition-delay: .2s;
-  opacity: 1;
-}
-
-.sign-in-trigger .username {
-  -webkit-transform: translateX(0em);
-          transform: translateX(0em);
-  -webkit-transition: ease all 1s;
-  transition: ease all 1s;
-  opacity: 1;
-  -webkit-transition-delay: .2s;
-          transition-delay: .2s;
-}
-
-.sign-in-trigger .password {
-  -webkit-transform: translateX(0em);
-          transform: translateX(0em);
-  -webkit-transition: ease all 1s;
-  transition: ease all 1s;
-  opacity: 1;
-  -webkit-transition-delay: .1s;
-          transition-delay: .1s;
-}
-
-.sign-in-trigger .forgot-password {
-  -webkit-transform: translateX(0em);
-          transform: translateX(0em);
-  -webkit-transition: ease all 1s;
-  transition: ease all 1s;
-  opacity: 1;
-  -webkit-transition-delay: .25s;
-          transition-delay: .25s;
-}
-
-.menu-btn-trigger .hamburger {
-  -webkit-transition: ease all 1s;
-  transition: ease all 1s;
-  background-color: white;
-  border-radius: 35px;
-  -webkit-transform: translateY(0em) rotate(45deg);
-          transform: translateY(0em) rotate(45deg);
-}
-
-.menu-btn-trigger .hamburger::after {
-  -webkit-transition: ease all 1s;
-  transition: ease all 1s;
-  background-color: white;
-  border-radius: 35px;
-  -webkit-transform: translateY(0em) rotate(115deg);
-          transform: translateY(0em) rotate(115deg);
-}
-
 #about {
   padding-top: 10rem;
   padding-bottom: 1rem;
@@ -11270,7 +11208,7 @@ footer .social-links:hover {
 
 @media (min-width: 768px) {
   .navbar .navbar-brand {
-    width: 7rem;
+    width: 9rem;
     display: inline-block;
     padding: 0;
     margin: 0;
