@@ -12,31 +12,48 @@
   <title>Bootstrap</title>
 </head>
 
+
+<!-- LOGIN -->
+    <div class="login-wrap">
+        <a href="#" ><i class="fas fa-times toggle"></i></a>
+        <section class="sign-in container">
+                <form action="" >
+                    <legend> Login </legend> 
+                    <p class="form-text">Need an Account? <a href="sign-up">Sign Up</a></p>
+                    <label for="username" class="form-control-label">Username</label>
+                    <input type="text" id="username">
+                    <label for="password" class="form-control-label mt-3">Password</label>
+                    <input type="password" id="password">
+                    <label for="Forgot Password"><a href="#" class="forgot-password">Forgot Password?</a></label> <br>
+                    <a href="#" class="primary-btn btn-slide-left" >Sign-in</a>
+                </form>
+        </section>
+    </div><!--LOGIN Ends-->
+
 <!-- Main Nav -->
 <nav class="navbar navbar-expand-md mx-auto fixed-top">
     <!-- button -->
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myTogglerNav" aria-controls="myTogglerNav" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars toggle"></i>
-    <!-- <i class="fas fa-times toggle"></i> -->
     </button>
     
     <!-- navbar-collapse -->
     <div class="container">
         <div class="collapse navbar-collapse " id="myTogglerNav">
             <ul class="navbar-nav mx-auto align-items-md-end justify-content-around">
+                <!-- Navbar Links -->
                 <a href="#" class="navbar-item navbar-link">Home</a>
-                <a href="#" class="navbar-item navbar-link">About</a>
+                <a href="#" class="navbar-item navbar-link ">About</a>
                 <!-- Brand logo Large screen -->
                 <a href="index.html" class="d-none d-md-block"><img class="navbar-brand" src="images/wetutorlogo_Logo Artboard.png" alt="weTutor Logo"></a>
-                <a href="#" class="navbar-item navbar-link">How It Works</a>
-                <button class="btn btn-primary"><a href="#" class="navbar-item navbar-link">Login</a></button> 
+                <a href="#" class="navbar-item navbar-link green">How It Works</a><a href="#" class="navbar-item navbar-link login-btn ">Login</a>
             </ul>
         </div>
     </div><!--Navbar-nav container End-->
 </nav><!--Main Nav End-->
 
 <div class="jumbotron-fluid d-md-block">
-    <img class="img-fluid" src="images/home-img.jpg" alt="weTutor Home Tutor Banner Image">
+    <img class="img-fluid home-banner-img" src="images/home-img.jpg" alt="weTutor Home Tutor Banner Image">
 </div>
 <!-- header -->
 <header class="d-md-flex">
@@ -53,23 +70,27 @@
     <!-- Mobile Brand Logo -->
     <a href="index.html" class="d-sm-block"><img class="navbar-brand-mobile mt-n3" src="images/wetutorlogo_Logo Artboard.png" alt="weTutor Brand Logo"></a>
     </div>
-    
 </header>
+
 
 <body>
     <!-- About Section -->
     <article id="about" class="container">
+        <a href="#" class="para" style="font-size: 2rem;">Hello</a>
+        <a href="#" class="para" style="font-size: 2rem;">My</a>
+        <a href="#" class="para green" style="font-size: 2rem;">Name</a>
+        <a href="#" class="para" style="font-size: 2rem;">Is</a>
+        <a href="#" class="para" style="font-size: 2rem;">Cheyenne</a>
         <div class="row">
             <div class="col-md-6 order-md-2 align-self-center">
                 <h1>Who We Are</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id architecto nam voluptatibus hic atque necessitatibus alias beatae incidunt delectus ipsum, provident 
-                    vtenetur obcaecati fugiat molestias. Minus beatae ab tempora amet.</p>
+                vtenetur obcaecati fugiat molestias. Minus beatae ab tempora amet.</p>
             </div>
             <div class="col-md-6 order-md-1 p-0">
                 <img src="images/about-img.jpg" alt="Who we are" class="img-fluid about-img rounded-circle">
             </div>
         </div>
-            
     </article>
 
     <h1 class="mt-5">Finding A Tutor Is Easy</h1>

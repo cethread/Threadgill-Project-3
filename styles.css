@@ -10814,25 +10814,27 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   position: relative;
-  text-align: center;
   z-index: -1;
+  overflow-x: hidden;
 }
 
 a {
+  font-size: 0.85rem;
   color: #e6e6e6;
   text-decoration: none !important;
 }
 
 a:hover {
   text-decoration: none;
-  color: #5e78e5;
 }
 
 p {
+  font-size: 0.8rem;
   font-family: "Body-Light";
 }
 
 h1 {
+  text-align: center !important;
   font-family: "Acumin";
 }
 
@@ -10841,17 +10843,15 @@ h2 {
 }
 
 .navbar {
+  position: relative;
   background: #242758;
   background: -webkit-gradient(linear, left top, right top, from(#242758), to(#141443));
   background: linear-gradient(90deg, #242758 0%, #141443 100%);
 }
 
 .navbar .navbar-link {
-  color: #e6e6e6;
-}
-
-.navbar .navbar-link:hover {
-  color: #5e78e5;
+  -webkit-transition: all ease 0.35s;
+  transition: all ease 0.35s;
 }
 
 .navbar-toggler {
@@ -10860,6 +10860,14 @@ h2 {
 
 .navbar .navbar-nav {
   width: 71%;
+}
+
+.navbar .red {
+  color: red;
+}
+
+.navbar .green {
+  color: green;
 }
 
 header {
@@ -10871,126 +10879,278 @@ header {
   background: linear-gradient(90deg, #242758 0%, #141443 100%);
 }
 
-/*form {
-    position: relative;
-    z-index: 100;v
-    input {
-        width: 260px;
-        height: 29px;
-        border-radius: 35px;
-        background: none;
-        font-size: $font-small;
-        color: white;
-        text-indent: 50px;
-        // border: $cta solid 1px;
-    }
-    .password {
-        margin-top: 10px;
-
-        background-image: url(password-lock.png);
-
-        background-repeat: no-repeat;
-
-        background-size: 15px;
-
-        background-position-x: 18px;
-
-        background-position-y: 9px;
-        opacity: 0;
-        transform: translateX(-23em);
-        transition: ease all 1.4s;
-    }
-    .forgot-password  {
-        // color: $color-primary;
-        margin-top: 10px;
-        font-size: $font-small;
-        margin-left: 9em;
-        transform: translateX(-23em);
-        transition: ease all 1.4s;
-        opacity: 0;
-    }
-    .username {
-        background-image: url(person-placeholder.png);
-        background-repeat: no-repeat;
-
-        background-size: 19px;
-
-        background-position-x: 16px;
-
-        background-position-y: 9px;
-        opacity: 0;
-        transform: translateX(23em);
-        transition: ease all 1s;
-    }
-    .btn-slide-left {
-        transition: all ease 1s;
-        transform: translateX(17em);
-        transition-delay: .2s;
-        opacity: 0;
-    }
+.home-banner-img {
+  margin-top: -8rem;
 }
 
-.sign-in {
-    position: relative;
-    height: 100vh;
-    padding-bottom: 5em;
-    z-index: 100;
-    margin-top: 100px;
-
-    .btn {
-    
-        &.outline {
-            // outline: $cta 2px solid;
-            border-radius: 35px;
-        }
-    }
-
-    // h1 {
-    //     color: p$color-primary;
-        
-    // }
-    
-
-    .logo {
-        width: 261px;
-        transition: all ease 1s;
-        transform: translateY(0em);
-
-        &:hover {
-            opacity: 0.7;
-        }
-    }
+.login-wrap {
+  color: #e6e6e6;
+  -webkit-transform: translateX(30rem);
+          transform: translateX(30rem);
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
+  height: 100vh;
+  background: #242758;
+  background: -webkit-gradient(linear, left top, right top, from(#242758), to(#141443));
+  background: linear-gradient(90deg, #242758 0%, #141443 100%);
+  position: absolute;
+  z-index: 100;
+  top: 3.2rem;
+  right: 0;
+  width: 26vw;
 }
 
+.login-wrap .fas {
+  color: #e6e6e6;
+  margin-left: 19rem;
+  margin-top: 1rem;
+}
 
-.hamburger {
-    position: absolute;
-    top: 1.5em;
-    left: 1em;
-    width: 30px;
-    height: 4px;
-    z-index: 100;
-    transition: ease all 1s;
-    background-color: white;
-    border-radius: 35px;
-    transform: translateY(-6em) rotate(45deg);
+.login-wrap .container {
+  position: relative;
+  padding-right: 25px !important;
+  padding-left: 25px !important;
+}
 
-    &::after {
-        content: '';
-        position: absolute;
-        width: 30px;
-        height: 4px;
-        z-index: 100;
-        transition: ease all 1s;
-        background-color: white;
-        border-radius: 35px;
-        transform: translateY(-6em) rotate(115deg);
-    }
-} */
+.login-wrap .container h1 {
+  color: #e6e6e6;
+  letter-spacing: 0.15rem;
+  margin-bottom: 1rem;
+}
+
+.login-wrap .container form {
+  position: relative;
+  z-index: 100;
+}
+
+.login-wrap .container form legend {
+  margin: 1rem 0 1rem 0;
+}
+
+.login-wrap .container form label {
+  margin: 0;
+}
+
+.login-wrap .container form input {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 35px;
+  background: none;
+  font-size: 15px;
+  color: white;
+  text-indent: 18px;
+  border: #008299 solid 1px;
+}
+
+.login-wrap .container form #password {
+  background-image: url(password-lock.png);
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position-x: 18px;
+  background-position-y: 9px;
+  -webkit-transform: translateX(0em);
+          transform: translateX(0em);
+  -webkit-transition: ease all 1.4s;
+  transition: ease all 1.4s;
+}
+
+.login-wrap .container form .forgot-password {
+  color: #97a5b6;
+  margin-top: 10px;
+  -webkit-transform: translateX(0em);
+          transform: translateX(0em);
+  -webkit-transition: ease all 1.4s;
+  transition: ease all 1.4s;
+}
+
+.login-wrap .container form #username {
+  background-image: url(person-placeholder.png);
+  background-repeat: no-repeat;
+  background-size: 19px;
+  background-position-x: 16px;
+  background-position-y: 9px;
+  -webkit-transform: translateX(0em);
+          transform: translateX(0em);
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+}
+
+.login-wrap .container form .btn-slide-left {
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+  -webkit-transform: translateX(0em);
+          transform: translateX(0em);
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.login-wrap .container .sign-in {
+  position: relative;
+  height: 100vh;
+  padding-bottom: 5em;
+  z-index: 100;
+}
+
+.login-wrap .container .sign-in .btn {
+  color: white;
+  background-color: #008299;
+  font-size: 20px;
+  padding: 0.3em 0;
+  border-radius: 35px;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+  -webkit-transform: translateY(0em);
+          transform: translateY(0em);
+  position: relative;
+}
+
+.login-wrap .container .sign-in .btn.outline {
+  outline: #008299 2px solid;
+  border-radius: 35px;
+}
+
+.login-wrap .container .sign-in h1 {
+  color: gray;
+}
+
+.login-wrap .container .sign-in h1 span {
+  color: #008299;
+}
+
+.login-wrap .container .sign-in .icon {
+  width: 150px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 3em;
+}
+
+.login-wrap .logo {
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+  -webkit-transform: translateY(0em);
+          transform: translateY(0em);
+}
+
+.login-wrap .hamburger {
+  position: absolute;
+  top: 1.5em;
+  left: 1em;
+  width: 30px;
+  height: 4px;
+  z-index: 100;
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+  background-color: white;
+  border-radius: 35px;
+  -webkit-transform: translateY(-6em) rotate(45deg);
+          transform: translateY(-6em) rotate(45deg);
+}
+
+.login-wrap .hamburger::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  z-index: 100;
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+  background-color: white;
+  border-radius: 35px;
+  -webkit-transform: translateY(-6em) rotate(115deg);
+          transform: translateY(-6em) rotate(115deg);
+}
+
+.login-wrap-slide {
+  -webkit-transform: translateX(0rem);
+          transform: translateX(0rem);
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+}
+
+.login-wrap-slide .container {
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.login-wrap-slide #username {
+  -webkit-transform: translateX(0em);
+          transform: translateX(0em);
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.login-wrap-slide #password {
+  -webkit-transform: translateX(0em);
+          transform: translateX(0em);
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+  opacity: 1;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.sign-in-trigger .btn-slide-down {
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+  -webkit-transform: translateY(20em);
+          transform: translateY(20em);
+  opacity: 0;
+}
+
+.sign-in-trigger .btn-slide-left {
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+  -webkit-transform: translateX(0em);
+          transform: translateX(0em);
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  opacity: 1;
+}
+
+.sign-in-trigger .logo {
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+  -webkit-transform: translateY(-15em);
+          transform: translateY(-15em);
+  opacity: 0;
+}
+
+.sign-in-trigger .forgot-password {
+  -webkit-transform: translateX(0em);
+          transform: translateX(0em);
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+  opacity: 1;
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.menu-btn-trigger .hamburger {
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+  background-color: white;
+  border-radius: 35px;
+  -webkit-transform: translateY(0em) rotate(45deg);
+          transform: translateY(0em) rotate(45deg);
+}
+
+.menu-btn-trigger .hamburger::after {
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+  background-color: white;
+  border-radius: 35px;
+  -webkit-transform: translateY(0em) rotate(115deg);
+          transform: translateY(0em) rotate(115deg);
+}
+
 #about {
+  text-align: center;
   padding-top: 10rem;
   padding-bottom: 1rem;
-  color: #333333;
 }
 
 #about p {
@@ -10998,6 +11158,7 @@ header {
 }
 
 #how-it-works {
+  text-align: center;
   position: relative;
   background: #242758;
   background: -webkit-gradient(linear, left top, right top, from(#242758), to(#141443));
@@ -11085,6 +11246,7 @@ header {
 }
 
 .top-tutors {
+  text-align: center;
   padding-top: 1.5rem;
 }
 
@@ -11094,10 +11256,11 @@ header {
 }
 
 .top-tutors .card-title span {
-  font-family: 'Main-Bold';
+  font-family: "Main-Bold";
 }
 
 footer {
+  text-align: center;
   color: #e6e6e6;
   position: relative;
   background: #242758;
@@ -11171,7 +11334,7 @@ footer .social-links:hover {
     margin: auto;
     right: 0;
     left: 0;
-    top: 3rem;
+    top: 2rem;
   }
   .jumbotron-fluid {
     display: none;
@@ -11208,7 +11371,7 @@ footer .social-links:hover {
 
 @media (min-width: 768px) {
   .navbar .navbar-brand {
-    width: 9rem;
+    width: 5rem;
     display: inline-block;
     padding: 0;
     margin: 0;
@@ -11220,9 +11383,9 @@ footer .social-links:hover {
     width: 100%;
   }
   header {
-    height: 12rem;
+    height: 8rem;
     z-index: 1;
-    margin-top: -7rem;
+    margin: -11rem 0 10rem 0;
   }
   header .header-btn-wrap {
     position: relative;
@@ -11232,7 +11395,7 @@ footer .social-links:hover {
     display: none;
   }
   header .navbar-brand-mobile {
-    width: 18.05rem;
+    width: 12.05rem;
     position: relative;
   }
 }
@@ -11241,5 +11404,29 @@ footer .social-links:hover {
   #rating img {
     width: 2rem;
   }
+}
+
+.login-wrap .primary-btn {
+  color: #e6e6e6;
+  background-color: #008299;
+  padding: 10px 7.6rem;
+  border-radius: 35px;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.login-wrap .primary-btn:hover {
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+  background-color: #006c80;
+}
+
+.navbar .navbar-link:hover {
+  -webkit-transition: all ease 0.35s;
+  transition: all ease 0.35s;
+  color: #e6e6e6;
+  background-color: #008299;
+  padding: 3px 10px;
+  border-radius: 15px;
 }
 /*# sourceMappingURL=styles.css.map */

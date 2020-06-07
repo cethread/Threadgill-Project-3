@@ -1,0 +1,24 @@
+.login-wrap {
+  .primary-btn {
+    color: $color-body-light;
+    background-color: $light-blue;
+    padding: 10px 7.6rem;
+    border-radius: 35px;
+    margin-top: 1rem;
+    display: inline-block;
+
+    &:hover {
+      transition: all ease 0.2s;
+      background-color: darken($color: $light-blue, $amount: 5%);
+    }
+  }
+}
+
+// Nav Btn
+.navbar .navbar-link:hover {
+  transition: all ease 0.35s;
+  color: $color-body-light;
+  background-color: $light-blue;
+  padding: 3px 10px;
+  border-radius: 15px;
+}

@@ -8,24 +8,24 @@ $color-body-light: #e6e6e6;
 $color-body-dark: #333333;
 $color-periwinkle: #5e78e5;
 $color-teal: #00b7b2;
+$light-blue: rgb(0, 130, 153);
+$gray: rgb(151, 165, 182);
 
 // GRADIENTS
-    // HOME-BG-COLOR
+// HOME-BG-COLOR
 // background: rgb(36,39,88);
 // background: linear-gradient(90deg, rgba(36,39,88,1) 0%, rgba(20,20,67,1) 100%);
 
-    // PRIMARY BTN COLOR
+// PRIMARY BTN COLOR
 // background: rgb(82,102,204);
 // background: linear-gradient(90deg, rgba(82,102,204,1) 0%, rgba(62,77,153,1) 100%);
 
-    // Tutor Card BG COLOR
+// Tutor Card BG COLOR
 // background: rgb(58,90,153);
 // background: linear-gradient(90deg, rgba(58,90,153,1) 0%, rgba(49,56,113,1) 100%);
- 
 
 // Fonts
 // $body-heading: "open sans"
-
 
 $font-h1: 5rem; //80/16px
 $font-h2: 2.8125rem; //45/16
@@ -48,14 +48,14 @@ $font-extrasmall: 0.9375rem; // 15/16*/
 //     border-top-left-radius: 110px;  /* 100px of height + 10px of border */
 //     border-top-right-radius: 110px; /* 100px of height + 10px of border */
 //     border: 10px solid gray;
-//     border-bottom: 0;    
+//     border-bottom: 0;
 //     margin-left: -0.6rem;
 //     margin-top: -0.6rem;
 // }
 
 // FONTS
-$font-main-bold: 'Main-Bold';
-$font-main-normal: 'Main-Normal';
-$font-body-bold: 'Body-Bold';
-$font-body-normal: 'Body-Normal';
-$font-body-light: 'Body-Lightv';
+$font-main-bold: "Main-Bold";
+$font-main-normal: "Main-Normal";
+$font-body-bold: "Body-Bold";
+$font-body-normal: "Body-Normal";
+$font-body-light: "Body-Lightv";

@@ -14,22 +14,26 @@
 // }
 body {
   position: relative;
-  text-align: center;
   z-index: -1;
+  overflow-x: hidden;
 }
+
 a {
+  font-size: 0.85rem;
   color: $color-body-light;
   text-decoration: none !important;
 
   &:hover {
     text-decoration: none;
-    color: $color-periwinkle;
+    // color: $color-periwinkle;
   }
 }
 p {
+  font-size: 0.8rem;
   font-family: "Body-Light";
 }
 h1 {
+  text-align: center !important;
   font-family: "Acumin";
 }
 h2 {
@@ -37,6 +41,7 @@ h2 {
 }
 // NAVBAR
 .navbar {
+  position: relative;
   background: rgb(36, 39, 88);
   background: linear-gradient(
     90deg,
@@ -44,11 +49,12 @@ h2 {
     rgba(20, 20, 67, 1) 100%
   );
   .navbar-link {
-    color: $color-body-light;
+    // color: $color-body-light;
+    transition: all ease 0.35s;
 
-    &:hover {
-      color: $color-periwinkle;
-    }
+    // &:hover {
+    //   color: $color-periwinkle;
+    // }
   }
   &-toggler {
     color: white;
@@ -57,6 +63,12 @@ h2 {
     width: 71%;
   }
 
+  .red {
+    color: red;
+  }
+  .green {
+    color: green;
+  }
   // &-toggler-icon {
   //     display: inline-block;
   //     width: 1.5em;
@@ -113,4 +125,10 @@ header {
     rgba(36, 39, 88, 1) 0%,
     rgba(20, 20, 67, 1) 100%
   );
+}
+
+// HOME
+
+.home-banner-img {
+  margin-top: -8rem;
 }
