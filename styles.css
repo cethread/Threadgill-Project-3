@@ -10847,6 +10847,7 @@ h2 {
   background: #242758;
   background: -webkit-gradient(linear, left top, right top, from(#242758), to(#141443));
   background: linear-gradient(90deg, #242758 0%, #141443 100%);
+  height: 4rem;
 }
 
 .navbar .navbar-link {
@@ -10877,6 +10878,14 @@ header {
   background: #242758;
   background: -webkit-gradient(linear, left top, right top, from(#242758), to(#141443));
   background: linear-gradient(90deg, #242758 0%, #141443 100%);
+}
+
+header p {
+  color: #e6e6e6;
+}
+
+header .col:last-of-type {
+  margin-top: 3rem;
 }
 
 .home-banner-img {
@@ -10939,7 +10948,7 @@ header {
   font-size: 15px;
   color: white;
   text-indent: 18px;
-  border: #008299 solid 1px;
+  border: #5e78e5 solid 1px;
 }
 
 .login-wrap .container form #password {
@@ -11149,7 +11158,6 @@ header {
 
 #about {
   text-align: center;
-  padding-top: 10rem;
   padding-bottom: 1rem;
 }
 
@@ -11357,6 +11365,12 @@ footer .social-links:hover {
     line-height: 1.2rem;
     letter-spacing: 0.03rem;
   }
+  #about {
+    padding-top: 10rem;
+  }
+  #header {
+    height: 74vh;
+  }
   .top-tutors .card-title span {
     letter-spacing: 0.04rem;
   }
@@ -11371,7 +11385,7 @@ footer .social-links:hover {
 
 @media (min-width: 768px) {
   .navbar .navbar-brand {
-    width: 5rem;
+    width: 7rem;
     display: inline-block;
     padding: 0;
     margin: 0;
@@ -11383,9 +11397,13 @@ footer .social-links:hover {
     width: 100%;
   }
   header {
-    height: 8rem;
+    height: 11rem;
     z-index: 1;
     margin: -11rem 0 10rem 0;
+  }
+  header .container {
+    padding-right: 75px;
+    padding-left: 75px;
   }
   header .header-btn-wrap {
     position: relative;
@@ -11395,8 +11413,16 @@ footer .social-links:hover {
     display: none;
   }
   header .navbar-brand-mobile {
-    width: 12.05rem;
+    width: 18.05rem;
     position: relative;
+  }
+  #about {
+    padding-bottom: 22rem;
+    padding-top: 5rem;
+  }
+  #about .container {
+    padding-right: 75px;
+    padding-left: 75px;
   }
 }
 
@@ -11406,27 +11432,40 @@ footer .social-links:hover {
   }
 }
 
-.login-wrap .primary-btn {
+.login-wrap a:hover {
+  color: #5e78e5;
+}
+
+.login-wrap a:hover:last-of-type {
   color: #e6e6e6;
-  background-color: #008299;
+}
+
+.primary-btn {
+  color: #e6e6e6;
+  background-color: #5e78e5;
   padding: 10px 7.6rem;
   border-radius: 35px;
   margin-top: 1rem;
   display: inline-block;
 }
 
-.login-wrap .primary-btn:hover {
+.primary-btn:hover {
   -webkit-transition: all ease 0.2s;
   transition: all ease 0.2s;
-  background-color: #006c80;
+  color: #e6e6e6;
+  background-color: #4866e1;
 }
 
-.navbar .navbar-link:hover {
+.navbar .navbar-link:hover, .navbar .login-btn {
   -webkit-transition: all ease 0.35s;
   transition: all ease 0.35s;
   color: #e6e6e6;
-  background-color: #008299;
-  padding: 3px 10px;
+  background-color: #5e78e5;
+  padding: 5px 20px;
   border-radius: 15px;
+}
+
+.login-btn:hover {
+  background-color: #4866e1;
 }
 /*# sourceMappingURL=styles.css.map */

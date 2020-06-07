@@ -1,16 +1,24 @@
 .login-wrap {
-  .primary-btn {
+  a:hover {
+    color: $color-periwinkle;
+  }
+  a:hover:last-of-type {
     color: $color-body-light;
-    background-color: $light-blue;
-    padding: 10px 7.6rem;
-    border-radius: 35px;
-    margin-top: 1rem;
-    display: inline-block;
+  }
+}
 
-    &:hover {
-      transition: all ease 0.2s;
-      background-color: darken($color: $light-blue, $amount: 5%);
-    }
+.primary-btn {
+  color: $color-body-light;
+  background-color: $color-periwinkle;
+  padding: 10px 7.6rem;
+  border-radius: 35px;
+  margin-top: 1rem;
+  display: inline-block;
+
+  &:hover {
+    transition: all ease 0.2s;
+    color: $color-body-light;
+    background-color: darken($color: $color-periwinkle, $amount: 5%);
   }
 }
 
@@ -18,7 +26,15 @@
 .navbar .navbar-link:hover {
   transition: all ease 0.35s;
   color: $color-body-light;
-  background-color: $light-blue;
-  padding: 3px 10px;
+  background-color: $color-periwinkle;
+  padding: 5px 20px;
   border-radius: 15px;
+}
+
+.login-btn {
+  @extend .navbar-link:hover;
+
+  &:hover {
+    background-color: darken($color: $color-periwinkle, $amount: 5%);
+  }
 }

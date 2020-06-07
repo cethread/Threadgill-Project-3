@@ -92,7 +92,13 @@
     line-height: 1.2rem;
     letter-spacing: 0.03rem;
   }
+  #about {
+    padding-top: 10rem;
+  }
 
+  #header {
+    height: 74vh;
+  }
   // Top Tutors
   .top-tutors {
     .card-title span {
@@ -108,12 +114,13 @@
     width: 1.4rem;
   }
 }
+
 // Ipad
 @media (min-width: 768px) {
   // Navbar
   .navbar {
     .navbar-brand {
-      width: 5rem;
+      width: 7rem;
       display: inline-block;
       padding: 0;
       margin: 0;
@@ -127,9 +134,14 @@
   }
 
   header {
-    height: 8rem;
+    height: 11rem;
     z-index: 1;
     margin: -11rem 0 10rem 0;
+
+    .container {
+      padding-right: 75px;
+      padding-left: 75px;
+    }
 
     .header-btn-wrap {
       position: relative;
@@ -140,10 +152,22 @@
       }
     }
     .navbar-brand-mobile {
-      width: 12.05rem;
+      width: 18.05rem;
       position: relative;
     }
   }
+
+  // About
+  #about {
+    padding-bottom: 22rem;
+    padding-top: 5rem;
+
+    .container {
+      padding-right: 75px;
+      padding-left: 75px;
+    }
+  }
+
   // How It Works
 
   // .step-1-decoration {
