@@ -42,11 +42,10 @@ h2 {
 // NAVBAR
 .navbar {
   position: relative;
-  background: rgb(36, 39, 88);
   background: linear-gradient(
     90deg,
-    rgba(36, 39, 88, 1) 0%,
-    rgba(20, 20, 67, 1) 100%
+    rgba(36, 39, 88, 0.5) 0%,
+    rgba(20, 20, 67, 0.5) 0%
   );
   height: 4rem;
   .navbar-link {

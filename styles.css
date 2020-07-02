@@ -10844,9 +10844,8 @@ h2 {
 
 .navbar {
   position: relative;
-  background: #242758;
-  background: -webkit-gradient(linear, left top, right top, from(#242758), to(#141443));
-  background: linear-gradient(90deg, #242758 0%, #141443 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(36, 39, 88, 0.5)), color-stop(0%, rgba(20, 20, 67, 0.5)));
+  background: linear-gradient(90deg, rgba(36, 39, 88, 0.5) 0%, rgba(20, 20, 67, 0.5) 0%);
   height: 4rem;
 }
 
