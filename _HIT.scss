@@ -1,12 +1,12 @@
 #how-it-works {
   text-align: center;
   position: relative;
-  background: rgb(36, 39, 88);
-  background: linear-gradient(
-    90deg,
-    rgba(36, 39, 88, 1) 0%,
-    rgba(20, 20, 67, 1) 100%
-  );
+  // background: rgb(36, 39, 88);
+  // background: linear-gradient(
+  //   90deg,
+  //   rgba(36, 39, 88, 1) 0%,
+  //   rgba(20, 20, 67, 1) 100%
+  // );
 
   p {
     // position: absolute;
@@ -16,21 +16,20 @@
       font-family: "Body-Bold";
     }
   }
-  .row {
-    margin-bottom: 4rem;
-  }
   .step-1-h2 {
     color: $color-teal !important;
   }
   .step-2-h2 {
-    color: $color-body-light;
+    color: $color-body-dark;
   }
   .step-3-h2 {
     color: $color-periwinkle;
   }
   .step-1 {
+    filter: drop-shadow(5px 0px 6px #252525);
     position: relative;
     background-image: url(images/teal-cloud-05.png);
+    opacity: 0.5;
     background-size: contain;
     background-repeat: no-repeat;
     height: 14rem;
@@ -40,10 +39,11 @@
     padding-top: 3.6rem;
 
     p {
-      color: $color-body-light;
+      color: white;
     }
   }
   .step-2 {
+    filter: drop-shadow(5px 0px 6px #aeaeae);
     background-image: url(images/gray-cloud-05-05.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -58,9 +58,11 @@
     }
   }
   .step-3 {
+    filter: drop-shadow(5px 0px 6px #252525);
     background-image: url(images/periwinkle-cloud-05-05-05.png);
     background-size: contain;
     background-repeat: no-repeat;
+    opacity: 0.5;
     max-width: 100%;
     height: 14rem;
     max-width: 100%;

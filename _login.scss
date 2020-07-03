@@ -6,13 +6,13 @@ $small: 15px;
 .login-wrap {
   color: $color-body-light;
   transform: translateX(30rem);
-  transition: ease 1s;
+  transition: all ease 1s;
   height: 100vh;
   background: #242758;
   background: linear-gradient(90deg, #242758 0%, #141443 100%);
   position: absolute;
   z-index: 100;
-  top: 3.2rem;
+  top: 4.05rem;
   right: 0;
   width: 26vw;
 

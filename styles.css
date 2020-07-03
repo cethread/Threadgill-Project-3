@@ -10816,11 +10816,15 @@ body {
   position: relative;
   z-index: -1;
   overflow-x: hidden;
+  background-color: #eeeceb;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
 }
 
 a {
-  font-size: 0.85rem;
-  color: #e6e6e6;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
   text-decoration: none !important;
 }
 
@@ -10829,7 +10833,7 @@ a:hover {
 }
 
 p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-family: "Body-Light";
 }
 
@@ -10844,14 +10848,15 @@ h2 {
 
 .navbar {
   position: relative;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(36, 39, 88, 0.5)), color-stop(0%, rgba(20, 20, 67, 0.5)));
-  background: linear-gradient(90deg, rgba(36, 39, 88, 0.5) 0%, rgba(20, 20, 67, 0.5) 0%);
+  background: rgba(0, 0, 0, 0.65) 100%;
   height: 4rem;
+  border-bottom: none;
 }
 
 .navbar .navbar-link {
-  -webkit-transition: all ease 0.35s;
-  transition: all ease 0.35s;
+  -webkit-transition: ease 0.55s;
+  transition: ease 0.55s;
+  padding: 20px 30px;
 }
 
 .navbar-toggler {
@@ -10874,36 +10879,50 @@ header {
   position: relative;
   z-index: -1;
   height: 30vh;
-  background: #242758;
-  background: -webkit-gradient(linear, left top, right top, from(#242758), to(#141443));
-  background: linear-gradient(90deg, #242758 0%, #141443 100%);
 }
 
 header p {
-  color: #e6e6e6;
+  color: white;
 }
 
 header .col:last-of-type {
   margin-top: 3rem;
 }
 
-.home-banner-img {
-  margin-top: -8rem;
+.jumbotron-fluid {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  z-index: -1;
+}
+
+.jumbotron-fluid .home-banner-img {
+  background-image: url("images/home-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: inherit;
+  width: inherit;
+  opacity: 0.5;
+  background-blend-mode: overlay;
+  position: absolute;
+  z-index: 1;
 }
 
 .login-wrap {
   color: #e6e6e6;
   -webkit-transform: translateX(30rem);
           transform: translateX(30rem);
-  -webkit-transition: ease 1s;
-  transition: ease 1s;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
   height: 100vh;
   background: #242758;
   background: -webkit-gradient(linear, left top, right top, from(#242758), to(#141443));
   background: linear-gradient(90deg, #242758 0%, #141443 100%);
   position: absolute;
   z-index: 100;
-  top: 3.2rem;
+  top: 4.05rem;
   right: 0;
   width: 26vw;
 }
@@ -11167,9 +11186,6 @@ header .col:last-of-type {
 #how-it-works {
   text-align: center;
   position: relative;
-  background: #242758;
-  background: -webkit-gradient(linear, left top, right top, from(#242758), to(#141443));
-  background: linear-gradient(90deg, #242758 0%, #141443 100%);
 }
 
 #how-it-works p {
@@ -11180,16 +11196,12 @@ header .col:last-of-type {
   font-family: "Body-Bold";
 }
 
-#how-it-works .row {
-  margin-bottom: 4rem;
-}
-
 #how-it-works .step-1-h2 {
   color: #00b7b2 !important;
 }
 
 #how-it-works .step-2-h2 {
-  color: #e6e6e6;
+  color: #333333;
 }
 
 #how-it-works .step-3-h2 {
@@ -11197,8 +11209,11 @@ header .col:last-of-type {
 }
 
 #how-it-works .step-1 {
+  -webkit-filter: drop-shadow(5px 0px 6px #252525);
+          filter: drop-shadow(5px 0px 6px #252525);
   position: relative;
   background-image: url(images/teal-cloud-05.png);
+  opacity: 0.5;
   background-size: contain;
   background-repeat: no-repeat;
   height: 14rem;
@@ -11209,10 +11224,12 @@ header .col:last-of-type {
 }
 
 #how-it-works .step-1 p {
-  color: #e6e6e6;
+  color: white;
 }
 
 #how-it-works .step-2 {
+  -webkit-filter: drop-shadow(5px 0px 6px #aeaeae);
+          filter: drop-shadow(5px 0px 6px #aeaeae);
   background-image: url(images/gray-cloud-05-05.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -11228,9 +11245,12 @@ header .col:last-of-type {
 }
 
 #how-it-works .step-3 {
+  -webkit-filter: drop-shadow(5px 0px 6px #252525);
+          filter: drop-shadow(5px 0px 6px #252525);
   background-image: url(images/periwinkle-cloud-05-05-05.png);
   background-size: contain;
   background-repeat: no-repeat;
+  opacity: 0.5;
   max-width: 100%;
   height: 14rem;
   max-width: 100%;
@@ -11260,6 +11280,11 @@ header .col:last-of-type {
 .top-tutors .card {
   margin-bottom: 3rem;
   border: none;
+  background-color: transparent !important;
+}
+
+.top-tutors .card-img {
+  max-width: 14rem;
 }
 
 .top-tutors .card-title span {
@@ -11340,7 +11365,7 @@ footer .social-links:hover {
     position: absolute;
     margin: auto;
     right: 0;
-    left: 0;
+    left: 10rem;
     top: 2rem;
   }
   .jumbotron-fluid {
@@ -11384,7 +11409,7 @@ footer .social-links:hover {
 
 @media (min-width: 768px) {
   .navbar .navbar-brand {
-    width: 7rem;
+    width: 6rem;
     display: inline-block;
     padding: 0;
     margin: 0;
@@ -11398,7 +11423,7 @@ footer .social-links:hover {
   header {
     height: 11rem;
     z-index: 1;
-    margin: -11rem 0 10rem 0;
+    margin: -23rem 0 10rem 0;
   }
   header .container {
     padding-right: 75px;
@@ -11412,7 +11437,7 @@ footer .social-links:hover {
     display: none;
   }
   header .navbar-brand-mobile {
-    width: 18.05rem;
+    width: 11rem;
     position: relative;
   }
   #about {
@@ -11432,15 +11457,15 @@ footer .social-links:hover {
 }
 
 .login-wrap a:hover {
-  color: #5e78e5;
+  color: White;
 }
 
 .login-wrap a:hover:last-of-type {
-  color: #e6e6e6;
+  color: white;
 }
 
 .primary-btn {
-  color: #e6e6e6;
+  color: white;
   background-color: #5e78e5;
   padding: 10px 7.6rem;
   border-radius: 35px;
@@ -11449,19 +11474,13 @@ footer .social-links:hover {
 }
 
 .primary-btn:hover {
-  -webkit-transition: all ease 0.2s;
-  transition: all ease 0.2s;
-  color: #e6e6e6;
+  color: white 0.5;
   background-color: #4866e1;
 }
 
 .navbar .navbar-link:hover, .navbar .login-btn {
-  -webkit-transition: all ease 0.35s;
-  transition: all ease 0.35s;
-  color: #e6e6e6;
-  background-color: #5e78e5;
-  padding: 5px 20px;
-  border-radius: 15px;
+  color: white;
+  background-color: #333333;
 }
 
 .login-btn:hover {

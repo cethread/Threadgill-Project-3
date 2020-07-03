@@ -14,6 +14,11 @@
   .card {
     margin-bottom: 3rem;
     border: none;
+    background-color: transparent !important;
+
+    &-img {
+      max-width: 14rem;
+    }
   }
   .card-title span {
     font-family: "Main-Bold";
