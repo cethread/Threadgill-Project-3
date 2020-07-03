@@ -10817,8 +10817,6 @@ body {
   z-index: -1;
   overflow-x: hidden;
   background-color: #eeeceb;
-  -webkit-transition: all ease 3s;
-  transition: all ease 3s;
 }
 
 a {
@@ -10880,6 +10878,7 @@ header {
   position: relative;
   z-index: -1;
   height: 30vh;
+  opacity: 0;
 }
 
 header p {
@@ -10923,7 +10922,7 @@ header .col:last-of-type {
   background: -webkit-gradient(linear, left top, right top, from(#242758), to(#141443));
   background: linear-gradient(90deg, #242758 0%, #141443 100%);
   position: absolute;
-  z-index: 100;
+  z-index: 200;
   top: 4.05rem;
   right: 0;
   width: 26vw;
@@ -11088,6 +11087,19 @@ header .col:last-of-type {
   border-radius: 35px;
   -webkit-transform: translateY(-6em) rotate(115deg);
           transform: translateY(-6em) rotate(115deg);
+}
+
+.body-load {
+  opacity: 1;
+  -webkit-transition: all ease-in 3s;
+  transition: all ease-in 3s;
+}
+
+.body-blackout {
+  background: black;
+  opacity: 0.56;
+  height: 100vh;
+  z-index: -100;
 }
 
 .login-wrap-slide {

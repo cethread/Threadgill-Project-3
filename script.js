@@ -36,12 +36,14 @@ function openLogin(e) {
   e.preventDefault();
   let loginWrap = document.querySelector(".login-wrap");
   loginWrap.classList.add("login-wrap-slide");
+  document.querySelector("body").classList.add("body-blackout");
   loginStatus = true;
 
   if (loginStatus == true) {
     document.querySelector(".fas").addEventListener("click", function (e) {
       e.preventDefault();
       loginWrap.classList.remove("login-wrap-slide");
+      document.querySelector("body").classList.remove("body-blackout");
     });
     loginStatus = false;
   }
@@ -88,3 +90,14 @@ for (var i = 0; i < paragraphs.length; i++) {
 // navbarLink.addEventListener("mouseover", addHoverEffect);
 
 // console.log("working");
+
+// Body Load
+
+window.addEventListener(
+  "DOMContentLoaded",
+  function () {
+    document.querySelector("header").classList.add("body-load");
+    console.log("working");
+  },
+  false
+);

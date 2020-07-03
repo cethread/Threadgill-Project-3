@@ -17,7 +17,6 @@ body {
   z-index: -1;
   overflow-x: hidden;
   background-color: #eeeceb;
-  transition: all ease 3s;
 }
 
 a {
@@ -129,6 +128,7 @@ header {
   position: relative;
   z-index: -1;
   height: 30vh;
+  opacity: 0;
   // background: rgb(36, 39, 88);
   // background: linear-gradient(
   //   90deg,
