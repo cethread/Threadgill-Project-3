@@ -41,9 +41,9 @@
     <!-- navbar-collapse -->
     <div class="container">
         <div class="collapse navbar-collapse " id="myTogglerNav">
-            <ul class="navbar-nav mx-auto align-items-md-end justify-content-around">
+            <ul class="navbar-nav mx-auto align-items-md-end justify-content-center">
                 <!-- Brand logo Large screen -->
-                <a href="index.html" class="d-none d-md-block align-self-start pt-2"><img class="navbar-brand" src="images/wetutorlogo_Logo Artboard-05.png" alt="weTutor Logo"></a>
+                <a href="index.html" class="d-none d-md-block align-self-start pt-2 px-3"><img class="navbar-brand" src="images/wetutorlogo_Logo Artboard-05.png" alt="weTutor Logo"></a>
                 <!-- Navbar Links -->
                 <a href="#" class="navbar-item navbar-link">Home</a>
                 <a href="#about" class="navbar-item navbar-link ">About</a>
@@ -55,40 +55,39 @@
 </nav><!--Main Nav End-->
 
 <div class="jumbotron-fluid d-md-block">
+    <!-- header -->
+    <header class="d-md-flex align-items-center">
+        <div class="container">
+            <!-- find a tutor btn -->
+            <div class="header-btn-wrap">
+                <div>
+                    <a href="#" title="Find A Tutor Now">  
+                        Find A Tutor
+                    </a>
+                </div>
+                <img class="find-a-tutor-outline" src="images/Half_circle-04.png">
+            </div><!--btn wrap end-->
+            <!-- Mobile Brand Logo -->
+            <div class="row justify-content-center">
+                <div class="col-3 p-0">
+                    <a href="index.html" class="d-sm-block"><img class="navbar-brand-mobile mt-n3" src="images/wetutorlogo_Logo Artboard.png" alt="weTutor Brand Logo"></a>
+                </div>
+            
+                <div class="col-9 d-none d-md-inline-block">
+                    <h1 class="text-left"> Find an expert online tutor.</h1>
+                    <p>Private, 1–on–1 lessons with the expert instructor of your choice. Meet online or in-person. Decide how much you pay and who you want to work with. The choice is yours.</p>
+                    <a href="#" class="primary-btn mt-0">Find A Tutor</a>
+                </div>
+            </div>
+        </div><!--COntainer end-->
+    </header>
     <img class="home-banner-img">
 </div>
-
-<!-- header -->
-<header class="d-md-flex">
-    <div class="container">
-        <!-- find a tutor btn -->
-        <div class="header-btn-wrap">
-            <div>
-                <a href="#" title="Find A Tutor Now">  
-                    Find A Tutor
-                </a>
-            </div>
-            <img class="find-a-tutor-outline" src="images/Half_circle-04.png">
-        </div><!--btn wrap end-->
-        <!-- Mobile Brand Logo -->
-        <div class="row">
-            <div class="col p-0 mr-n5">
-                <a href="index.html" class="d-sm-block"><img class="navbar-brand-mobile mt-n3" src="images/wetutorlogo_Logo Artboard.png" alt="weTutor Brand Logo"></a>
-            </div>
-        
-            <div class="col ml-n5 d-none d-md-inline-block">
-                <p>Private, 1–on–1 lessons with the expert instructor of your choice. Meet online or in-person. Decide how much you pay and who you want to work with. The choice is yours.</p>
-                <a href="#" class="primary-btn mt-0">Find A Tutor</a>
-            </div>
-        </div>
-    </div>
-</header>
-
 
 <body>
 
     <!-- How It Works Section -->
-    <section id="how-it-works" class="mt-5 py-5">
+    <section id="how-it-works">
         <h1 class=" text-dark my-5">Finding A Tutor Is Easy</h1>
         <div class="container">
 
@@ -144,8 +143,6 @@
         </div><!--Container End-->
     </section><!--How It Works End-->
 
-    <hr class="mt-5">
-
     <!-- About Section -->
     <!-- <article id="about">
         <div class="container">
@@ -162,27 +159,30 @@
         </div>
     </article> -->
 
-    <div class="tutor-devider mt-5"></div>
+    
 
     <!-- Top Tutors  Section-->
-    <h1>Our Top Tutors</h1>
-    <hr>
+    <h1 class="pt-5">Our Top Tutors</h1>
+    <hr class="mx-auto pb-1" style="max-width: 70rem;">
+    <div class="tutor-divider"></div>
     <section class="top-tutors">
         <div class="container d-md-flex">
     
             <div class="card">
-                <img class="card-img rounded-circle" src="images/studying-tips-1.jpg" alt="Top Tutor: Erica Rogers">
-                <div class="card-text">
-                    <h5 class="card-title pt-3"><span>Erica Rogers</span>, Teacher</h5>
-                    <p>Lorem, ipsum dolor sit, alias tempora deleniti unde hic iusto sed quae.</p>
-                </div>
-                <section id="rating" class="d-flex mx-auto justify-content-center">
-                    <img src="images/star-rating-icon-05.png" alt="">
-                    <img src="images/star-rating-icon-05.png" alt="">
-                    <img src="images/star-rating-icon-05.png" alt="">
-                    <img src="images/star-rating-icon-05.png" alt="">
-                    <img src="images/star-rating-icon-05.png" alt="">
-                </section><!--Rating End-->
+                <div class="card-body">
+                    <img class="card-img rounded-circle align-self-center" src="images/studying-tips-1.jpg" alt="Top Tutor: Erica Rogers">
+                    <div class="card-text">
+                        <h5 class="card-title pt-3"><span>Erica Rogers</span>, Teacher</h5>
+                        <p>Lorem, ipsum dolor sit, alias tempora deleniti unde hic iusto sed quae.</p>
+                    </div>
+                    <section id="rating" class="d-flex mx-auto justify-content-center">
+                        <img src="images/star-rating-icon-05.png" alt="">
+                        <img src="images/star-rating-icon-05.png" alt="">
+                        <img src="images/star-rating-icon-05.png" alt="">
+                        <img src="images/star-rating-icon-05.png" alt="">
+                        <img src="images/star-rating-icon-05.png" alt="">
+                    </section><!--Rating End-->
+                </div><!--Card Body End-->
             </div><!--Card End-->
             
             <div class="card">
@@ -198,24 +198,26 @@
                         <img src="images/star-rating-icon-05.png" alt="">
                         <img src="images/star-rating-icon-05.png" alt="">
                     </section><!--Rating End-->
-                </div>
+                </div><!--Card Body End-->
             </div><!--Card End-->
 
             <div class="card">
-                <img class="card-img rounded-circle" src="images/Stepahnie.jpg" alt="Top Tutor: Stephanie Ojeda">
-                <h5 class="card-title pt-3"><span>Stephanie Ojeda</span>, Teacher</h5>
-                <div class="card-text">
-                    <p>Lorem, ipsum dolor sit, alias tempora deleniti unde hic iusto sed quae.</p>
-                </div>
-                <section id="rating" class="d-flex mx-auto justify-content-center">
-                        <img src="images/star-rating-icon-05.png" alt="">
-                        <img src="images/star-rating-icon-05.png" alt="">
-                        <img src="images/star-rating-icon-05.png" alt="">
-                        <img src="images/star-rating-icon-05.png" alt="">
-                        <img src="images/star-rating-icon-05.png" alt="">
-                </section>
-            </div><!--Card End-->
-        </div>
+                <div class="card-body">
+                    <img class="card-img rounded-circle align-self-center" src="images/Stepahnie.jpg" alt="Top Tutor: Stephanie Ojeda">
+                    <h5 class="card-title pt-3"><span>Stephanie Ojeda</span>, Teacher</h5>
+                    <div class="card-text">
+                        <p>Lorem, ipsum dolor sit, alias tempora deleniti unde hic iusto sed quae.</p>
+                    </div>
+                    <section id="rating" class="d-flex mx-auto justify-content-center">
+                            <img src="images/star-rating-icon-05.png" alt="">
+                            <img src="images/star-rating-icon-05.png" alt="">
+                            <img src="images/star-rating-icon-05.png" alt="">
+                            <img src="images/star-rating-icon-05.png" alt="">
+                            <img src="images/star-rating-icon-05.png" alt="">
+                    </section>
+                </div><!--Card Body End--></div>
+        </div><!--Card End-->
+        <div class="tutor-divider"></div>
     </section><!--Tutor Section End-->
 
     <div class="tutor-devider mb-5"></div>

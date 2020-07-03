@@ -9,6 +9,9 @@ footer {
     rgba(20, 20, 67, 1) 100%
   );
 
+  nav li a {
+    font-weight: $font-main-normal !important;
+  }
   .footer-logo {
     position: absolute;
     margin: auto;

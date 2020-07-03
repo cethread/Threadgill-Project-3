@@ -17,7 +17,7 @@ body {
   z-index: -1;
   overflow-x: hidden;
   background-color: #eeeceb;
-  transition: all ease 1s;
+  transition: all ease 3s;
 }
 
 a {
@@ -28,7 +28,7 @@ a {
 
   &:hover {
     text-decoration: none;
-    // color: $color-periwinkle;
+    color: $color-periwinkle;
   }
 }
 p {
@@ -42,6 +42,10 @@ h1 {
 h2 {
   font-family: $font-main-bold;
 }
+// h5 {
+//   font-size: 1.1rem !important;
+// }
+
 // NAVBAR
 .navbar {
   position: relative;
@@ -51,7 +55,7 @@ h2 {
   //   rgba(36, 39, 88, 1) 0%,
   //   rgba(20, 20, 67, 1) 0%
   // );
-  background: rgba(0, 0, 0, 0.65) 100%;
+  background: rgba(0, 0, 0, 0.56);
   height: 4rem;
   border-bottom: none;
   .navbar-link {
@@ -158,6 +162,7 @@ header {
   width: 100vw;
   position: relative;
   z-index: -1;
+  margin-top: -4rem;
 
   .home-banner-img {
     background-image: url("images/home-img.jpg");
@@ -166,7 +171,7 @@ header {
     background-attachment: fixed;
     height: inherit;
     width: inherit;
-    opacity: 0.5;
+    opacity: 0.35;
     background-blend-mode: overlay;
     position: absolute;
     z-index: 1;

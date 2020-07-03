@@ -56,16 +56,8 @@
     }
   }
 
-  header {
-    .navbar-brand-mobile {
-      width: 11.05rem;
-      position: absolute;
-      margin: auto;
-      right: 0;
-      left: 10rem;
-      top: 2rem;
-    }
-  }
+  // header {
+  // }
   .jumbotron-fluid {
     display: none;
   }
@@ -135,9 +127,11 @@
   }
 
   header {
-    height: 11rem;
-    z-index: 1;
-    margin: -23rem 0 10rem 0;
+    height: inherit;
+    width: inherit;
+    z-index: 100;
+    position: absolute;
+    color: white;
 
     .container {
       padding-right: 75px;
@@ -151,6 +145,10 @@
       img {
         display: none;
       }
+    }
+
+    a:hover {
+      color: white;
     }
     .navbar-brand-mobile {
       width: 11rem;
@@ -214,7 +212,7 @@
 @media (max-width: 2000px) {
   #rating {
     img {
-      width: 2rem;
+      width: 1.6rem;
     }
   }
 }
