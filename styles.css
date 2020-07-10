@@ -10838,7 +10838,7 @@ p {
 
 h1 {
   text-align: center !important;
-  font-family: "Acumin";
+  font-family: "Main-Bold";
 }
 
 h2 {
@@ -10850,6 +10850,7 @@ h2 {
   background: rgba(0, 0, 0, 0.56);
   height: 4rem;
   border-bottom: none;
+  z-index: 490;
 }
 
 .navbar .navbar-link {
@@ -10913,19 +10914,20 @@ header .col:last-of-type {
 
 .login-wrap {
   color: #e6e6e6;
-  -webkit-transform: translateX(30rem);
-          transform: translateX(30rem);
-  -webkit-transition: all ease 1s;
-  transition: all ease 1s;
+  -webkit-transform: translateX(270rem);
+          transform: translateX(270rem);
+  -webkit-transition: all ease 2s;
+  transition: all ease 2s;
   height: 100vh;
   background: #242758;
   background: -webkit-gradient(linear, left top, right top, from(#242758), to(#141443));
   background: linear-gradient(90deg, #242758 0%, #141443 100%);
   position: absolute;
-  z-index: 200;
-  top: 4.05rem;
+  z-index: 500;
+  top: 0rem;
   right: 0;
   width: 26vw;
+  padding-top: 9rem;
 }
 
 .login-wrap .fas {
@@ -11010,6 +11012,7 @@ header .col:last-of-type {
           transform: translateX(0em);
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s;
+  width: 100%;
 }
 
 .login-wrap .container .sign-in {
@@ -11091,15 +11094,16 @@ header .col:last-of-type {
 
 .body-load {
   opacity: 1;
-  -webkit-transition: all ease-in 3s;
-  transition: all ease-in 3s;
+  -webkit-transition: opacity ease-in 2s;
+  transition: opacity ease-in 2s;
 }
 
 .body-blackout {
-  background: black;
-  opacity: 0.56;
+  background-color: black;
+  opacity: 0.6;
   height: 100vh;
-  z-index: -100;
+  -webkit-transition: all ease-in-out 0.6s;
+  transition: all ease-in-out 0.6s;
 }
 
 .login-wrap-slide {
@@ -11420,18 +11424,6 @@ footer .social-links:hover {
 }
 
 @media (min-width: 768px) {
-  .navbar .navbar-brand {
-    width: 6rem;
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-    font-size: 1.25rem;
-    line-height: inherit;
-    white-space: nowrap;
-  }
-  .navbar ul {
-    width: 100%;
-  }
   header {
     height: inherit;
     width: inherit;
@@ -11454,8 +11446,20 @@ footer .social-links:hover {
     color: white;
   }
   header .navbar-brand-mobile {
-    width: 11rem;
+    width: 15rem;
     position: relative;
+  }
+  .navbar .navbar-brand {
+    width: 7rem;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+  .navbar ul {
+    width: 100%;
   }
   #about {
     padding-bottom: 22rem;
@@ -11467,7 +11471,7 @@ footer .social-links:hover {
   }
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 10000px) {
   #rating img {
     width: 1.6rem;
   }

@@ -34,20 +34,77 @@ loginStatus = false;
 
 function openLogin(e) {
   e.preventDefault();
+  window.addEventListener(
+    "scroll",
+    function () {
+      window.scrollTo(0, 0);
+    },
+    false
+  );
+
   let loginWrap = document.querySelector(".login-wrap");
   loginWrap.classList.add("login-wrap-slide");
-  document.querySelector("body").classList.add("body-blackout");
+  document.querySelector("header").classList.add("body-blackout");
   loginStatus = true;
 
   if (loginStatus == true) {
     document.querySelector(".fas").addEventListener("click", function (e) {
       e.preventDefault();
       loginWrap.classList.remove("login-wrap-slide");
-      document.querySelector("body").classList.remove("body-blackout");
+      document.querySelector("header").classList.remove("body-blackout");
     });
     loginStatus = false;
   }
 }
+
+// Second fx for open login
+// loginStatus = false;
+
+// function openLogin(e) {
+//   e.preventDefault();
+//   const target = e.target;
+
+//   let loginWrap = document.querySelector(".login-wrap");
+
+//   if (loginStatus == false) {
+//     loginWrap.classList.add("login-wrap-slide");
+//     document.querySelector("body").classList.add("body-blackout");
+//   }
+//   loginStatus = true;
+
+//   if (loginStatus == true) {
+//     e.preventDefault();
+
+//     // CLose with Icon btn
+//     document.querySelector(".fas").addEventListener(
+//       "click",
+//       function (e) {
+//         loginWrap.classList.remove("login-wrap-slide");
+//         document.querySelector("body").classList.remove("body-blackout");
+//       },
+//       false
+//     );
+
+//     // CLose with Login btn
+//     document.querySelector(".login-btn").addEventListener(
+//       "click",
+//       function (e) {
+//         loginWrap.classList.remove("login-wrap-slide");
+//         document.querySelector("body").classList.remove("body-blackout");
+//       },
+//       false
+//     );
+
+//     loginStatus = false;
+//     console.log(loginStatus);
+//   }
+// }
+
+// document
+//   .querySelector(".login-btn")
+//   .addEventListener("click", openLogin, false);
+
+// Login End
 
 // Loop through the links and add  the red class to them
 // For Loop

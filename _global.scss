@@ -36,7 +36,7 @@ p {
 }
 h1 {
   text-align: center !important;
-  font-family: "Acumin";
+  font-family: "Main-Bold";
 }
 h2 {
   font-family: $font-main-bold;
@@ -57,6 +57,8 @@ h2 {
   background: rgba(0, 0, 0, 0.56);
   height: 4rem;
   border-bottom: none;
+  z-index: 490;
+
   .navbar-link {
     // color: $color-body-light;
     transition: ease 0.55s;

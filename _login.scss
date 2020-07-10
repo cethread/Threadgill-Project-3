@@ -5,16 +5,17 @@ $small: 15px;
 
 .login-wrap {
   color: $color-body-light;
-  transform: translateX(30rem);
-  transition: all ease 1s;
+  transform: translateX(270rem);
+  transition: all ease 2s;
   height: 100vh;
   background: #242758;
   background: linear-gradient(90deg, #242758 0%, #141443 100%);
   position: absolute;
-  z-index: 200;
-  top: 4.05rem;
+  z-index: 500;
+  top: 0rem;
   right: 0;
   width: 26vw;
+  padding-top: 9rem;
 
   .fas {
     color: $color-body-light;
@@ -96,6 +97,7 @@ $small: 15px;
         transform: translateX(0em);
         transition-delay: 0.2s;
         // opacity: 0;
+        width: 100%;
       }
     }
 
