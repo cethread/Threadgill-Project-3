@@ -10932,8 +10932,7 @@ header .col:last-of-type {
 
 .login-wrap .fas {
   color: #e6e6e6;
-  margin-left: 19rem;
-  margin-top: 1rem;
+  margin-left: 7.4rem;
 }
 
 .login-wrap .container {
@@ -11488,7 +11487,7 @@ footer .social-links:hover {
 .primary-btn {
   color: white;
   background-color: #5e78e5;
-  padding: 10px 10.4rem;
+  padding: 0.5rem 2rem;
   border-radius: 35px;
   margin-top: 1rem;
   display: inline-block;

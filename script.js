@@ -34,24 +34,24 @@ loginStatus = false;
 
 function openLogin(e) {
   e.preventDefault();
-  window.addEventListener(
-    "scroll",
-    function () {
-      window.scrollTo(0, 0);
-    },
-    false
-  );
 
   let loginWrap = document.querySelector(".login-wrap");
   loginWrap.classList.add("login-wrap-slide");
   document.querySelector("header").classList.add("body-blackout");
+    
+  //Fixed Window Scroll
+  document.querySelector("body").style.overflowY = "hidden";
   loginStatus = true;
 
   if (loginStatus == true) {
     document.querySelector(".fas").addEventListener("click", function (e) {
       e.preventDefault();
+
       loginWrap.classList.remove("login-wrap-slide");
       document.querySelector("header").classList.remove("body-blackout");
+
+      // Fixed window scroll
+      document.querySelector("body").style.overflowY = "scroll";
     });
     loginStatus = false;
   }
