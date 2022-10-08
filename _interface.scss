@@ -30,7 +30,7 @@
 }
 
 .login-btn {
-  @extend .navbar-link:hover;
+  @extend .navbar-link, :hover;
 
   &:hover {
     background-color: darken($color: $color-periwinkle, $amount: 5%);
