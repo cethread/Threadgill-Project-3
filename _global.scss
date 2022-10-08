@@ -16,7 +16,6 @@ body {
   position: relative;
   z-index: -1;
   overflow-x: hidden;
-  background-color: #eeeceb;
 }
 
 a {
@@ -37,13 +36,26 @@ p {
 h1 {
   text-align: center !important;
   font-family: "Main-Bold";
+  
 }
+
 h2 {
-  font-family: $font-main-bold;
+  font-family: $font-main-normal;
+  font-weight: 500 !important;
+  font-size: 4em;
+}
+
+h3 {
+  font-size: 1.8em;
 }
 // h5 {
 //   font-size: 1.1rem !important;
 // }
+
+h6 {
+  font-size: 1.3em;
+  letter-spacing: 2px;
+}
 
 // NAVBAR
 .navbar {
@@ -58,6 +70,7 @@ h2 {
   height: 4rem;
   border-bottom: none;
   z-index: 490;
+  filter: drop-shadow(0 0 0.25rem rgb(0, 0, 0));
 
   .navbar-link {
     // color: $color-body-light;

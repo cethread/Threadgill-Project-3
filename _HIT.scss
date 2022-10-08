@@ -1,8 +1,13 @@
 #how-it-works {
   text-align: center;
   position: relative;
-  background: rgb(228, 228, 228);
-  padding: 5rem 0 8rem 0;
+  background-color: #fcfcfc;
+  padding: 12rem 0 15rem 0;
+
+  h1 {
+    padding-bottom: 1em;
+    letter-spacing: 5px;
+  }
 
   p {
     // position: absolute;
@@ -70,4 +75,55 @@
       color: $color-body-light;
     }
   }
+}
+
+
+
+
+
+
+/* new hit */
+
+.new-hit {
+  height: 100vh ;
+
+  .hit-bg {
+    background-image: url("/images/hit-bg.png");
+    height: 100px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  h2,h3 {
+    text-align: center;
+  }
+  
+  a {
+    color: black;
+    font-weight: normal;
+    display: block;
+  }
+
+  &-flex {
+    display: flex;
+    background-color: rgb(169, 205, 193);
+    height: inherit;
+
+    div {
+      flex-grow: 1; 
+    }
+
+    .div-1 {
+      background-color: antiquewhite;
+    } 
+    .div-2 {
+      background-color: rgb(205, 205, 204);
+    } 
+    .div-3 {
+      background-color: rgb(164, 152, 137);
+    } 
+  }
+
+  
 }

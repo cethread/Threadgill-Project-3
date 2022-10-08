@@ -1,4 +1,4 @@
-/*footer {
+footer {
   text-align: center;
   color: $color-body-light;
   position: relative;
@@ -8,31 +8,30 @@
     rgba(36, 39, 88, 1) 0%,
     rgba(20, 20, 67, 1) 100%
   );
-*/
 
 
+/*
 footer {
-  background-image: url('/images/FOOTHER-BG-PNG.png');
+  background-image: url("/images/FOOTHER-BG-PNG.png");
   background-size: cover;
   height: 85%;
   width: 100%;
   text-align: center;
-  color: $color-body-light;
- ;
-
+  color: $color-body-light; */
 
   nav li a {
     font-weight: $font-main-normal !important;
   }
   .footer-logo {
+    width: 20%;
     position: absolute;
     margin: auto;
     left: 0;
     right: 0;
-    top: -1rem;
+    top: -2.9rem;
   }
   .row {
-    padding: 7rem 0;
+    padding: 12.7rem 0 8rem 0;
   }
   .col {
     padding-bottom: 6rem;

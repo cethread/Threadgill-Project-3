@@ -1,18 +1,27 @@
+.tutors {
+  margin: 12em 0 20em 0;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+
 .tutor-divider {
   background-image: url(images/tutor-decoration-05.png);
   width: 5em;
   height: 3em;
   background-size: contain;
   background-repeat: no-repeat;
-  margin: 3rem auto 0 auto;
+  margin: auto;
 }
 
 .top-tutors {
   text-align: center;
-  padding-top: 1.5rem;
+  padding: 1.5rem;
   // background-color: #eeeceb;
+
   .card {
-    margin-bottom: 3rem;
     border: none;
     background-color: transparent !important;
 

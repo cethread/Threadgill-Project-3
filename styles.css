@@ -9250,7 +9250,6 @@ body {
   position: relative;
   z-index: -1;
   overflow-x: hidden;
-  background-color: #eeeceb;
 }
 
 a {
@@ -9275,7 +9274,18 @@ h1 {
 }
 
 h2 {
-  font-family: "Main-Bold";
+  font-family: "Main-Normal";
+  font-weight: 500 !important;
+  font-size: 4em;
+}
+
+h3 {
+  font-size: 1.8em;
+}
+
+h6 {
+  font-size: 1.3em;
+  letter-spacing: 2px;
 }
 
 .navbar {
@@ -9284,6 +9294,7 @@ h2 {
   height: 4rem;
   border-bottom: none;
   z-index: 490;
+  filter: drop-shadow(0 0 0.25rem rgb(0, 0, 0));
 }
 .navbar .navbar-link, .navbar .login-btn {
   transition: ease 0.55s;
@@ -9554,8 +9565,12 @@ header .col:last-of-type {
 #how-it-works {
   text-align: center;
   position: relative;
-  background: rgb(228, 228, 228);
-  padding: 5rem 0 8rem 0;
+  background-color: #fcfcfc;
+  padding: 12rem 0 15rem 0;
+}
+#how-it-works h1 {
+  padding-bottom: 1em;
+  letter-spacing: 5px;
 }
 #how-it-works p {
   margin: 0 auto;
@@ -9619,21 +9634,64 @@ header .col:last-of-type {
   color: #e6e6e6;
 }
 
+/* new hit */
+.new-hit {
+  height: 100vh;
+}
+.new-hit .hit-bg {
+  background-image: url("/images/hit-bg.png");
+  height: 100px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.new-hit h2, .new-hit h3 {
+  text-align: center;
+}
+.new-hit a {
+  color: black;
+  font-weight: normal;
+  display: block;
+}
+.new-hit-flex {
+  display: flex;
+  background-color: rgb(169, 205, 193);
+  height: inherit;
+}
+.new-hit-flex div {
+  flex-grow: 1;
+}
+.new-hit-flex .div-1 {
+  background-color: antiquewhite;
+}
+.new-hit-flex .div-2 {
+  background-color: rgb(205, 205, 204);
+}
+.new-hit-flex .div-3 {
+  background-color: rgb(164, 152, 137);
+}
+
+.tutors {
+  margin: 12em 0 20em 0;
+}
+.tutors h2 {
+  text-align: center;
+}
+
 .tutor-divider {
   background-image: url(images/tutor-decoration-05.png);
   width: 5em;
   height: 3em;
   background-size: contain;
   background-repeat: no-repeat;
-  margin: 3rem auto 0 auto;
+  margin: auto;
 }
 
 .top-tutors {
   text-align: center;
-  padding-top: 1.5rem;
+  padding: 1.5rem;
 }
 .top-tutors .card {
-  margin-bottom: 3rem;
   border: none;
   background-color: transparent !important;
 }
@@ -9644,37 +9702,34 @@ header .col:last-of-type {
   font-family: "Main-Bold";
 }
 
-/*footer {
-  text-align: center;
-  color: $color-body-light;
-  position: relative;
-  background: rgb(36, 39, 88);
-  background: linear-gradient(
-    90deg,
-    rgba(36, 39, 88, 1) 0%,
-    rgba(20, 20, 67, 1) 100%
-  );
-*/
 footer {
-  background-image: url("/images/FOOTHER-BG-PNG.png");
-  background-size: cover;
-  height: 85%;
-  width: 100%;
   text-align: center;
   color: #e6e6e6;
+  position: relative;
+  background: rgb(36, 39, 88);
+  background: linear-gradient(90deg, rgb(36, 39, 88) 0%, rgb(20, 20, 67) 100%);
+  /*
+  footer {
+    background-image: url("/images/FOOTHER-BG-PNG.png");
+    background-size: cover;
+    height: 85%;
+    width: 100%;
+    text-align: center;
+    color: $color-body-light; */
 }
 footer nav li a {
   font-weight: "Main-Normal" !important;
 }
 footer .footer-logo {
+  width: 20%;
   position: absolute;
   margin: auto;
   left: 0;
   right: 0;
-  top: -1rem;
+  top: -2.9rem;
 }
 footer .row {
-  padding: 7rem 0;
+  padding: 12.7rem 0 8rem 0;
 }
 footer .col {
   padding-bottom: 6rem;
