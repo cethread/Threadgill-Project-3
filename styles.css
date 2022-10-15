@@ -9235,6 +9235,18 @@ h3 {
   font-weight: normal;
   font-family: "Body-Light";
 }
+@font-face {
+  src: url(fonts/NotoSans-Bold.ttf);
+  font-family: "noto bold";
+}
+@font-face {
+  src: url(fonts/NotoSans-Bold.ttf);
+  font-family: "noto semibold";
+}
+@font-face {
+  src: url(fonts/NotoSans-Regular.ttf);
+  font-family: "noto-regular";
+}
 *,
 ::before,
 ::after {
@@ -9277,10 +9289,24 @@ h2 {
   font-family: "Main-Normal";
   font-weight: 500 !important;
   font-size: 4em;
+  color: white;
 }
 
 h3 {
   font-size: 1.8em;
+}
+
+h5 {
+  font-size: 22.2px !important;
+  letter-spacing: 3px;
+  color: rgba(128, 128, 128, 0.5411764706);
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 2.925rem;
+  font-family: "noto bold";
+  letter-spacing: 3px;
 }
 
 h6 {
@@ -9290,7 +9316,7 @@ h6 {
 
 .navbar {
   position: relative;
-  background: rgba(0, 0, 0, 0.56);
+  background: linear-gradient(90deg, rgb(36, 39, 88) 0%, rgb(20, 20, 67) 100%);
   height: 4rem;
   border-bottom: none;
   z-index: 490;
@@ -9299,6 +9325,9 @@ h6 {
 .navbar .navbar-link, .navbar .login-btn {
   transition: ease 0.55s;
   padding: 20px 30px;
+}
+.navbar .navbar-link:hover, .navbar .login-btn {
+  background-color: #5e78e5;
 }
 .navbar-toggler {
   color: white;
@@ -9314,8 +9343,6 @@ h6 {
 }
 
 header {
-  position: relative;
-  z-index: -1;
   height: 30vh;
   opacity: 0;
 }
@@ -9330,8 +9357,6 @@ header .col:last-of-type {
   background-color: black;
   height: 100vh;
   width: 100vw;
-  position: relative;
-  z-index: -1;
   margin-top: -4rem;
 }
 .jumbotron-fluid .home-banner-img {
@@ -9343,8 +9368,6 @@ header .col:last-of-type {
   width: inherit;
   opacity: 0.35;
   background-blend-mode: overlay;
-  position: absolute;
-  z-index: 1;
 }
 
 .login-wrap {
@@ -9486,6 +9509,14 @@ header .col:last-of-type {
   transform: translateY(-6em) rotate(115deg);
 }
 
+#about {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+#about p {
+  padding-bottom: 2rem;
+}
+
 .body-load {
   opacity: 1;
   transition: opacity ease-in 2s;
@@ -9493,7 +9524,7 @@ header .col:last-of-type {
 
 .body-blackout {
   background-color: black;
-  opacity: 0.6;
+  opacity: 0.8;
   height: 100vh;
   transition: all ease-in-out 0.6s;
 }
@@ -9554,19 +9585,10 @@ header .col:last-of-type {
   transform: translateY(0em) rotate(115deg);
 }
 
-#about {
-  text-align: center;
-  padding-bottom: 1rem;
-}
-#about p {
-  padding-bottom: 2rem;
-}
-
 #how-it-works {
   text-align: center;
   position: relative;
   background-color: #fcfcfc;
-  padding: 12rem 0 15rem 0;
 }
 #how-it-works h1 {
   padding-bottom: 1em;
@@ -9636,46 +9658,117 @@ header .col:last-of-type {
 
 /* new hit */
 .new-hit {
-  height: 100vh;
-}
-.new-hit .hit-bg {
-  background-image: url("/images/hit-bg.png");
-  height: 100px;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
 }
 .new-hit h2, .new-hit h3 {
   text-align: center;
+  color: white;
+  position: relative;
+  z-index: 10;
+}
+.new-hit h2 {
+  padding-top: 0.6em;
+}
+.new-hit h3 {
+  margin-bottom: 4em;
+}
+.new-hit h4 {
+  margin-top: 6.7em;
 }
 .new-hit a {
-  color: black;
   font-weight: normal;
   display: block;
+  font-size: 20px;
+  text-transform: capitalize;
 }
-.new-hit-flex {
+.new-hit .hit-bg {
+  background-image: url("../weTutor/images/hit-bg.png");
+  min-height: 268px;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: 9;
+}
+.new-hit .bg-color-flex {
   display: flex;
-  background-color: rgb(169, 205, 193);
-  height: inherit;
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
 }
-.new-hit-flex div {
+.new-hit .bg-color-flex .div-1 {
+  background-color: #f2f2f2;
+}
+.new-hit .bg-color-flex .div-1:hover, .new-hit .bg-color-flex .div-1.login-btn {
+  filter: drop-shadow(-0.1in 0.03in 0.1in rgba(131, 131, 131, 0.3803921569));
+  scale: 110%;
+  transition: ease-in-out 0.5s;
+  -webkit-clip-path: inset(2.5em 0 0 0);
+          clip-path: inset(2.5em 0 0 0);
+}
+.new-hit .bg-color-flex .div-2 {
+  background-color: #f2f2f2;
+  opacity: 0.4;
+}
+.new-hit .bg-color-flex .div-3 {
+  background-color: #f2f2f2;
+  opacity: 0.4;
+}
+.new-hit .bg-color-flex .bg-color-div-flex {
+  display: flex;
   flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
-.new-hit-flex .div-1 {
-  background-color: antiquewhite;
-}
-.new-hit-flex .div-2 {
-  background-color: rgb(205, 205, 204);
-}
-.new-hit-flex .div-3 {
-  background-color: rgb(164, 152, 137);
+.new-hit .bg-color-flex .bg-color-div-flex .bg-img-links-flex {
+  display: flex;
+  background-image: url("../weTutor/images/hit-text-bg.png");
+  height: 65%;
+  width: 47%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: auto;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -11.5%;
 }
 
-.tutors {
-  margin: 12em 0 20em 0;
+.div-2-activated {
+  filter: drop-shadow(-0.1in 0.03in 0.1in rgba(131, 131, 131, 0.3803921569));
+  opacity: 1 !important;
+  scale: 110%;
+  transition: ease-in-out 0.5s;
 }
+
+.div-2-selected {
+  opacity: 0.1 !important;
+  scale: 100%;
+  filter: none;
+}
+
+.div-3-selected {
+  opacity: 0.1;
+  scale: 100%;
+  filter: none;
+}
+
+.div-3-activated {
+  filter: drop-shadow(-0.1in 0.03in 0.1in rgba(131, 131, 131, 0.3803921569));
+  opacity: 1 !important;
+  scale: 110% !important;
+  transition: ease-in-out 0.5s;
+}
+
 .tutors h2 {
   text-align: center;
+  background: linear-gradient(90deg, rgb(36, 39, 88) 0%, rgb(20, 20, 67) 100%);
+  padding: 0.3em;
 }
 
 .tutor-divider {
@@ -9689,7 +9782,7 @@ header .col:last-of-type {
 
 .top-tutors {
   text-align: center;
-  padding: 1.5rem;
+  padding: 7.5rem;
 }
 .top-tutors .card {
   border: none;
@@ -9697,9 +9790,23 @@ header .col:last-of-type {
 }
 .top-tutors .card-img {
   max-width: 14rem;
+  border-radius: 100% !important;
+}
+.top-tutors .card-title {
+  font-family: "body-normal";
+  color: rgba(0, 0, 0, 0.8509803922) !important;
+  margin-top: 1.8em;
+  margin-bottom: 10px;
+  letter-spacing: none !important;
 }
 .top-tutors .card-title span {
-  font-family: "Main-Bold";
+  font-family: "Body-Bold" !important;
+}
+.top-tutors .card-title p {
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-size: 16px !important;
 }
 
 footer {
@@ -9721,15 +9828,11 @@ footer nav li a {
   font-weight: "Main-Normal" !important;
 }
 footer .footer-logo {
-  width: 20%;
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: -2.9rem;
+  width: 23rem;
+  margin-top: 4em;
 }
 footer .row {
-  padding: 12.7rem 0 8rem 0;
+  padding: 5.7rem 0 8rem 0;
 }
 footer .col {
   padding-bottom: 6rem;
@@ -9740,6 +9843,14 @@ footer .social-links {
 }
 footer .social-links:hover, footer .social-links.login-btn {
   opacity: 1;
+}
+footer .copyright {
+  background-color: white;
+  color: rgb(32, 32, 32);
+  font-family: "Body-Norma";
+  letter-spacing: 0.5px;
+  padding: 6px 0 6px 0;
+  font-size: 18px;
 }
 
 @media (min-width: 0px) {
@@ -9870,6 +9981,9 @@ header .header-btn-wrap img {
 .login-wrap a:hover:last-of-type, .login-wrap a.login-btn:last-of-type {
   color: white;
 }
+.login-wrap .sign-up:hover, .login-wrap .sign-up.login-btn {
+  color: #5e78e5 !important;
+}
 
 .primary-btn {
   color: white;
@@ -9878,6 +9992,7 @@ header .header-btn-wrap img {
   border-radius: 35px;
   margin-top: 1rem;
   display: inline-block;
+  transition: ease-in-out 0.3s;
 }
 .primary-btn:hover, .primary-btn.login-btn {
   color: white 0.5;
@@ -9886,7 +10001,6 @@ header .header-btn-wrap img {
 
 .navbar .navbar-link:hover, .navbar .login-btn {
   color: white;
-  background-color: #333333;
 }
 
 .login-btn:hover, .login-btn {

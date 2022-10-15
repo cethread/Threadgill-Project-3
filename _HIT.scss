@@ -2,7 +2,7 @@
   text-align: center;
   position: relative;
   background-color: #fcfcfc;
-  padding: 12rem 0 15rem 0;
+  // padding: 12rem 0 15rem 0;
 
   h1 {
     padding-bottom: 1em;
@@ -85,45 +85,129 @@
 /* new hit */
 
 .new-hit {
-  height: 100vh ;
-
-  .hit-bg {
-    background-image: url("/images/hit-bg.png");
-    height: 100px;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+  min-height: 100vh ;
+  position: relative;
 
   h2,h3 {
     text-align: center;
+    color: white;
+    position: relative;
+    z-index: 10;
   }
   
+  h2 {
+    padding-top: 0.6em;
+  }
+  
+  h3 {
+    margin-bottom: 4em;
+  }
+  h4 {
+    margin-top: 6.7em;
+  }
   a {
-    color: black;
     font-weight: normal;
     display: block;
+    font-size: 20px;
+    text-transform: capitalize;
+    
   }
 
-  &-flex {
-    display: flex;
-    background-color: rgb(169, 205, 193);
-    height: inherit;
+  .hit-bg {
+    background-image: url("../weTutor/images/hit-bg.png");
+    min-height: 268px;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 9;
+  }
+  
 
-    div {
-      flex-grow: 1; 
-    }
+  .bg-color-flex {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
 
     .div-1 {
-      background-color: antiquewhite;
+      background-color: #f2f2f2;
+      // opacity: 0.3;
+
+      &:hover {
+        filter: drop-shadow(-0.1in 0.03in 0.1in #83838361);
+        scale: 110%;
+        transition: ease-in-out 0.5s;
+        clip-path: inset(2.5em 0 0 0);
+      }
     } 
     .div-2 {
-      background-color: rgb(205, 205, 204);
+      background-color: #f2f2f2;
+      opacity: 0.4;
     } 
     .div-3 {
-      background-color: rgb(164, 152, 137);
+      background-color: #f2f2f2;
+      opacity: 0.4;
     } 
-  }
 
-  
+    .bg-color-div-flex {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+
+      .bg-img-links-flex {
+        display: flex;
+        background-image: url("../weTutor/images/hit-text-bg.png");
+        height: 65%;
+        width: 47%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        margin: auto;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -11.5%;
+      }
+
+    }
+  }
+}
+
+
+
+
+
+
+//ANIMATIONS//
+
+.div-2-activated {
+      filter: drop-shadow(-0.1in 0.03in 0.1in #83838361);
+      opacity: 1 !important;
+      scale: 110%;
+      transition: ease-in-out 0.5s;
+}
+.div-2-selected {
+  opacity: 0.1 !important;
+  scale: 100%;
+  filter: none;
+}
+
+
+.div-3-selected {
+opacity: 0.1;
+scale: 100%;
+filter: none;
+
+}
+
+.div-3-activated {
+  filter: drop-shadow(-0.1in 0.03in 0.1in #83838361);
+  opacity: 1 !important;
+  scale: 110% !important;
+  transition: ease-in-out 0.5s;
 }

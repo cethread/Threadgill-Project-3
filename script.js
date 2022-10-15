@@ -24,25 +24,37 @@
 // logoImage.addEventListener("mouseover" , lowOpacity, false)
 // console.log("working");
 
-// LOGIN
 
+
+
+
+// LOGIN--------------------------------------------------------
+
+//Listen for click on login btn
 document
   .querySelector(".login-btn")
   .addEventListener("click", openLogin, false);
+  //Listen for click on login btn 
 
+//Login is closed
 loginStatus = false;
+  //Login is closed
 
 function openLogin(e) {
   e.preventDefault();
 
   let loginWrap = document.querySelector(".login-wrap");
   loginWrap.classList.add("login-wrap-slide");
-  document.querySelector("header").classList.add("body-blackout");
+  document.querySelector("header").classList.add("body-blackout"); //Body blackout enabled
     
   //Fixed Window Scroll
   document.querySelector("body").style.overflowY = "hidden";
-  loginStatus = true;
 
+   // Login Opened
+  loginStatus = true;
+    // Login Opened
+
+  // Login Opened
   if (loginStatus == true) {
     document.querySelector(".fas").addEventListener("click", function (e) {
       e.preventDefault();
@@ -53,7 +65,9 @@ function openLogin(e) {
       // Fixed window scroll
       document.querySelector("body").style.overflowY = "scroll";
     });
+    // Login Closed
     loginStatus = false;
+      // Login Closed
   }
 }
 

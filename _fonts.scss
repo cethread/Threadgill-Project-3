@@ -35,6 +35,23 @@
 //     font-weight: bold;
 // }
 
+@font-face {
+    src: url(fonts/NotoSans-Bold.ttf);
+    font-family: 'noto bold'
+}
+
+@font-face {
+    src: url(fonts/NotoSans-Bold.ttf);
+    font-family: 'noto semibold';
+    
+}
+
+@font-face {
+    src: url(fonts/NotoSans-Regular.ttf);
+    font-family: 'noto-regular';
+    
+}
+
 @import url("https://use.typekit.net/ihq2yhi.css");
 
 $font-heading:  'acumin-pro';

@@ -5,6 +5,11 @@
   a:hover:last-of-type {
     color: white;
   }
+
+  .sign-up:hover {
+    color: #5e78e5 !important;
+
+  }
 }
 
 .primary-btn {
@@ -14,6 +19,7 @@
   border-radius: 35px;
   margin-top: 1rem;
   display: inline-block;
+  transition: ease-in-out 0.3s;
 
   &:hover {
     // transition: all ease 0.2s;
@@ -26,7 +32,7 @@
 .navbar .navbar-link:hover {
   // transition: ease 0.35s;
   color: white;
-  background-color: $color-body-dark;
+  // background-color: $color-body-dark;
 }
 
 .login-btn {
