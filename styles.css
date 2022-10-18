@@ -9612,7 +9612,7 @@ header .col:last-of-type {
 #how-it-works .step-1 {
   filter: drop-shadow(5px 0px 6px #252525);
   position: relative;
-  background-image: url(images/teal-cloud-05.png);
+  background-image: url("../weTutor/images/teal-cloud-05.png");
   opacity: 0.5;
   background-size: contain;
   background-repeat: no-repeat;
@@ -9683,7 +9683,7 @@ header .col:last-of-type {
   text-transform: capitalize;
 }
 .new-hit .hit-bg {
-  background-image: url("../weTutor/images/hit-bg.png");
+  background-image: url("images/hit-bg.png");
   min-height: 268px;
   width: 100vw;
   background-repeat: no-repeat;
@@ -9726,7 +9726,7 @@ header .col:last-of-type {
 }
 .new-hit .bg-color-flex .bg-color-div-flex .bg-img-links-flex {
   display: flex;
-  background-image: url("../weTutor/images/hit-text-bg.png");
+  background-image: url("images/hit-text-bg.png");
   height: 65%;
   width: 47%;
   background-repeat: no-repeat;
