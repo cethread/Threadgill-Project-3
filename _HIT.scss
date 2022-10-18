@@ -3,6 +3,8 @@
   position: relative;
   background-color: #fcfcfc;
   // padding: 12rem 0 15rem 0;
+  
+    color: red !important;
 
   h1 {
     padding-bottom: 1em;
@@ -60,7 +62,7 @@
   }
   .step-3 {
     filter: drop-shadow(5px 0px 6px #252525);
-    background-image: url(images/periwinkle-cloud-05-05-05.png);
+    background-image: url(../images/periwinkle-cloud-05-05-05.png);
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.5;
